@@ -1,0 +1,68 @@
+{
+  "tapes": [
+    {
+      "tape": "2023-044#01",
+      "started": "2023-02-13",
+      "saved": "2023-07-03",
+      "current": false,
+      "bpm": 120,
+      "loops": 11
+    },
+    {
+      "tape": "2023-184#01",
+      "started": "2023-07-03",
+      "saved": "2024-03-15",
+      "current": false,
+      "bpm": 120,
+      "loops": 18
+    },
+    {
+      "tape": "2023-188#01",
+      "started": "2023-07-07",
+      "saved": "2023-08-01",
+      "current": false,
+      "bpm": 120,
+      "loops": 19
+    },
+    {
+      "tape": "2023-213#01",
+      "started": "2023-08-01",
+      "saved": "2023-08-12",
+      "current": false,
+      "bpm": 60,
+      "loops": 19
+    },
+    {
+      "tape": "2023-222#01",
+      "started": "2023-08-10",
+      "saved": "2024-01-27",
+      "current": false,
+      "bpm": 180,
+      "loops": 23
+    },
+    {
+      "tape": "2023-258#01",
+      "started": "2023-09-15",
+      "saved": "2024-01-25",
+      "current": false,
+      "bpm": 140,
+      "loops": 28
+    },
+    {
+      "tape": "2024-020#01",
+      "started": "2024-01-20",
+      "saved": "2024-09-18",
+      "current": false,
+      "bpm": 110,
+      "loops": 30
+    },
+    {
+      "tape": "tape 01",
+      "started": null,
+      "saved": null,
+      "current": true,
+      "bpm": 120,
+      "loops": 20
+    }
+  ]
+}

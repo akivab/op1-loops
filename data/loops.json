@@ -1,0 +1,8874 @@
+{
+  "sampleRate": 44100,
+  "loops": [
+    {
+      "id": "tape01-01",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 763930,
+      "end": 1362049,
+      "detected": {
+        "start": 755997,
+        "end": 1364367
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 667797,
+        "end": 1452567,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -1.8
+          },
+          {
+            "track": 2,
+            "peakDb": -3.4
+          },
+          {
+            "track": 3,
+            "peakDb": -5.1
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 140,
+        "beats": 32,
+        "start": 755721,
+        "end": 1360523,
+        "confidence": 1,
+        "residualMs": 2.88,
+        "hits": 38
+      },
+      "timing": "drums"
+    },
+    {
+      "id": "tape01-02",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 1688295,
+      "end": 2041230,
+      "detected": {
+        "start": 1688295,
+        "end": 2041230
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 1590522,
+        "end": 2117825,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.8
+          },
+          {
+            "track": 2,
+            "peakDb": -10.5
+          },
+          {
+            "track": 3,
+            "peakDb": -6.2
+          },
+          {
+            "track": 4,
+            "peakDb": -15.2
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 119.954,
+        "beats": 16,
+        "start": 1688295,
+        "end": 2041230,
+        "confidence": 0.708,
+        "residualMs": 6.45,
+        "hits": 64
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 1678722,
+        "end": 2029625
+      }
+    },
+    {
+      "id": "tape01-03",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 2586640,
+      "end": 3057638,
+      "detected": {
+        "start": 2586728,
+        "end": 3057638
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2498528,
+        "end": 3145838,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -14.8
+          },
+          {
+            "track": 2,
+            "peakDb": -12.9
+          },
+          {
+            "track": 3,
+            "peakDb": -3.8
+          },
+          {
+            "track": 4,
+            "peakDb": -2.1
+          }
+        ]
+      },
+      "fadeMs": 80,
+      "drumFit": {
+        "track": 3,
+        "bpm": 90.011,
+        "beats": 16,
+        "start": 2585829,
+        "end": 3056169,
+        "confidence": 0.75,
+        "residualMs": 5.88,
+        "hits": 43
+      },
+      "timing": "drums"
+    },
+    {
+      "id": "tape01-04",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 3176662,
+      "end": 3882081,
+      "detected": {
+        "start": 3176662,
+        "end": 3882081
+      },
+      "recordedTracks": [
+        0,
+        1
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3082384,
+        "end": 3968374,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": 0
+          },
+          {
+            "track": 2,
+            "peakDb": -7.9
+          },
+          {
+            "track": 3,
+            "peakDb": null
+          },
+          {
+            "track": 4,
+            "peakDb": -23.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 90.023,
+        "beats": 24,
+        "start": 3176662,
+        "end": 3882081,
+        "confidence": 0.769,
+        "residualMs": 5.5,
+        "hits": 82
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 3170584,
+        "end": 3880174
+      }
+    },
+    {
+      "id": "tape01-05",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 4055729,
+      "end": 5819926,
+      "detected": {
+        "start": 4055729,
+        "end": 5819926
+      },
+      "recordedTracks": [
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3967943,
+        "end": 5909271,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -1
+          },
+          {
+            "track": 2,
+            "peakDb": -9.1
+          },
+          {
+            "track": 3,
+            "peakDb": 0
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 119.987,
+        "beats": 80,
+        "start": 4055729,
+        "end": 5819926,
+        "confidence": 0.66,
+        "residualMs": 6.85,
+        "hits": 166
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 4056143,
+        "end": 5821071
+      }
+    },
+    {
+      "id": "tape01-06",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 5909102,
+      "end": 6614999,
+      "detected": {
+        "start": 5909102,
+        "end": 6614999
+      },
+      "recordedTracks": [
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 5820902,
+        "end": 6703199,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -1.7
+          },
+          {
+            "track": 3,
+            "peakDb": -2.1
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 120.011,
+        "beats": 32,
+        "start": 5913646,
+        "end": 6619180,
+        "confidence": 0.533,
+        "residualMs": 7.3,
+        "hits": 95
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "tape01-07",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 6791004,
+      "end": 7141206,
+      "detected": {
+        "start": 6791004,
+        "end": 7150052
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6702804,
+        "end": 7238252,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -9.6
+          },
+          {
+            "track": 2,
+            "peakDb": 0
+          },
+          {
+            "track": 3,
+            "peakDb": -10.3
+          },
+          {
+            "track": 4,
+            "peakDb": -9.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 120.081,
+        "beats": 16,
+        "start": 6790663,
+        "end": 7143224,
+        "confidence": 0.809,
+        "residualMs": 4.14,
+        "hits": 45
+      },
+      "timing": "drums"
+    },
+    {
+      "id": "tape01-08",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 7234059,
+      "end": 7585777,
+      "detected": {
+        "start": 7234059,
+        "end": 7585777
+      },
+      "recordedTracks": [
+        0,
+        1,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7145859,
+        "end": 7673977,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -13.3
+          },
+          {
+            "track": 2,
+            "peakDb": -4
+          },
+          {
+            "track": 3,
+            "peakDb": 0
+          },
+          {
+            "track": 4,
+            "peakDb": -6.9
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 120.011,
+        "beats": 16,
+        "start": 7234059,
+        "end": 7586826,
+        "confidence": 0.591,
+        "residualMs": 5.07,
+        "hits": 28
+      },
+      "timing": "free"
+    },
+    {
+      "id": "tape01-09",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 7665405,
+      "end": 7996090,
+      "detected": {
+        "start": 7665405,
+        "end": 7996090
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7577205,
+        "end": 8084290,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.4
+          },
+          {
+            "track": 2,
+            "peakDb": -2.4
+          },
+          {
+            "track": 3,
+            "peakDb": -2.3
+          },
+          {
+            "track": 4,
+            "peakDb": -0.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 120.001,
+        "beats": 15,
+        "start": 7665168,
+        "end": 7995914,
+        "confidence": 0.465,
+        "residualMs": 8.36,
+        "hits": 39
+      },
+      "timing": "free"
+    },
+    {
+      "id": "tape01-10",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 8911776,
+      "end": 9612909,
+      "detected": {
+        "start": 8908574,
+        "end": 9608195
+      },
+      "recordedTracks": [
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 8820374,
+        "end": 9696395,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -13.2
+          },
+          {
+            "track": 3,
+            "peakDb": -3
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "fadeMs": 80,
+      "drumFit": {
+        "track": 3,
+        "bpm": 120.022,
+        "beats": 32,
+        "start": 8906805,
+        "end": 9612276,
+        "confidence": 0.613,
+        "residualMs": 7.89,
+        "hits": 56
+      },
+      "timing": "drums"
+    },
+    {
+      "id": "tape01-11",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 9702532,
+      "end": 10054389,
+      "detected": {
+        "start": 9702532,
+        "end": 10054389
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 9614332,
+        "end": 10142589,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6.6
+          },
+          {
+            "track": 2,
+            "peakDb": -13.2
+          },
+          {
+            "track": 3,
+            "peakDb": -14.8
+          },
+          {
+            "track": 4,
+            "peakDb": -9.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 185.38,
+        "beats": 25,
+        "start": 9701095,
+        "end": 10057929,
+        "confidence": 0.3,
+        "residualMs": 10.77,
+        "hits": 46
+      },
+      "timing": "free"
+    },
+    {
+      "id": "tape01-12",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 10417090,
+      "end": 11122509,
+      "detected": {
+        "start": 10417090,
+        "end": 11122509
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 10319201,
+        "end": 11198577,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.9
+          },
+          {
+            "track": 2,
+            "peakDb": -11.7
+          },
+          {
+            "track": 3,
+            "peakDb": -4.6
+          },
+          {
+            "track": 4,
+            "peakDb": -12.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 120.031,
+        "beats": 32,
+        "start": 10417090,
+        "end": 11122509,
+        "confidence": 0.607,
+        "residualMs": 7.51,
+        "hits": 79
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 10407401,
+        "end": 11110377
+      }
+    },
+    {
+      "id": "tape01-13",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 11201648,
+      "end": 11907416,
+      "detected": {
+        "start": 11201648,
+        "end": 11907416
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11113448,
+        "end": 11995616,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.2
+          },
+          {
+            "track": 2,
+            "peakDb": -5.8
+          },
+          {
+            "track": 3,
+            "peakDb": -4.6
+          },
+          {
+            "track": 4,
+            "peakDb": -10.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 61.927,
+        "beats": 17,
+        "start": 11207582,
+        "end": 11933952,
+        "confidence": 0.075,
+        "residualMs": 27.06,
+        "hits": 117
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "tape01-14",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 11994517,
+      "end": 12677911,
+      "detected": {
+        "start": 11994517,
+        "end": 12677911
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11906306,
+        "end": 12762578,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -26.4
+          },
+          {
+            "track": 2,
+            "peakDb": -16.5
+          },
+          {
+            "track": 3,
+            "peakDb": -3.4
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 120.027,
+        "beats": 31,
+        "start": 11994517,
+        "end": 12677911,
+        "confidence": 0.896,
+        "residualMs": 4,
+        "hits": 105
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 11994506,
+        "end": 12674378
+      }
+    },
+    {
+      "id": "tape01-15",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 12799263,
+      "end": 13152064,
+      "detected": {
+        "start": 12799263,
+        "end": 13152064
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12699740,
+        "end": 13230113,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -19
+          },
+          {
+            "track": 2,
+            "peakDb": 0
+          },
+          {
+            "track": 3,
+            "peakDb": -9
+          },
+          {
+            "track": 4,
+            "peakDb": -8.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 120,
+        "beats": 16,
+        "start": 12799263,
+        "end": 13152064,
+        "confidence": 0.922,
+        "residualMs": 3.81,
+        "hits": 32
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 12787940,
+        "end": 13141913
+      }
+    },
+    {
+      "id": "tape01-16",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 13296002,
+      "end": 13766241,
+      "detected": {
+        "start": 13296002,
+        "end": 13766241
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 13200573,
+        "end": 13847966,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -11.3
+          },
+          {
+            "track": 2,
+            "peakDb": 0
+          },
+          {
+            "track": 3,
+            "peakDb": -2.6
+          },
+          {
+            "track": 4,
+            "peakDb": -12.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 180.061,
+        "beats": 32,
+        "start": 13296002,
+        "end": 13766241,
+        "confidence": 0.705,
+        "residualMs": 6.49,
+        "hits": 86
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 13288773,
+        "end": 13759766
+      }
+    },
+    {
+      "id": "tape01-17",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 13857857,
+      "end": 14210548,
+      "detected": {
+        "start": 13857857,
+        "end": 14210548
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 13758847,
+        "end": 14289166,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -11.5
+          },
+          {
+            "track": 2,
+            "peakDb": -1.1
+          },
+          {
+            "track": 3,
+            "peakDb": 0
+          },
+          {
+            "track": 4,
+            "peakDb": -4.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 120.037,
+        "beats": 16,
+        "start": 13857857,
+        "end": 14210548,
+        "confidence": 0.7,
+        "residualMs": 6.57,
+        "hits": 42
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 13847047,
+        "end": 14200966
+      }
+    },
+    {
+      "id": "tape01-18",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 14288097,
+      "end": 14641231,
+      "detected": {
+        "start": 14288097,
+        "end": 14641231
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 14199897,
+        "end": 14729431,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -15.1
+          },
+          {
+            "track": 2,
+            "peakDb": -0.4
+          },
+          {
+            "track": 3,
+            "peakDb": -1.2
+          },
+          {
+            "track": 4,
+            "peakDb": -10.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 119.992,
+        "beats": 16,
+        "start": 14289423,
+        "end": 14642246,
+        "confidence": 0.839,
+        "residualMs": 4.27,
+        "hits": 63
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "tape01-19",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 14817414,
+      "end": 15170097,
+      "detected": {
+        "start": 14817414,
+        "end": 15170097
+      },
+      "recordedTracks": [
+        0,
+        1,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 14729338,
+        "end": 15261555,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3.5
+          },
+          {
+            "track": 2,
+            "peakDb": -1.4
+          },
+          {
+            "track": 3,
+            "peakDb": -0.3
+          },
+          {
+            "track": 4,
+            "peakDb": -15.9
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 120.04,
+        "beats": 16,
+        "start": 14817414,
+        "end": 15170097,
+        "confidence": 0.673,
+        "residualMs": 6.96,
+        "hits": 59
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 14817538,
+        "end": 15173355
+      }
+    },
+    {
+      "id": "tape01-20",
+      "tape": "tape 01",
+      "name": "",
+      "bpm": 120,
+      "start": 15258598,
+      "end": 15705130,
+      "detected": {
+        "start": 15258598,
+        "end": 15705130
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 15170398,
+        "end": 15793330,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.7
+          },
+          {
+            "track": 2,
+            "peakDb": -17.4
+          },
+          {
+            "track": 3,
+            "peakDb": -15
+          },
+          {
+            "track": 4,
+            "peakDb": -6.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 120.673,
+        "beats": 20,
+        "start": 15258733,
+        "end": 15697273,
+        "confidence": 0.159,
+        "residualMs": 17.32,
+        "hits": 40
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-044-01",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 18256,
+      "end": 723996,
+      "detected": {
+        "start": 18256,
+        "end": 723996
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 0,
+        "end": 795112,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2.5
+          },
+          {
+            "track": 2,
+            "peakDb": -13.4
+          },
+          {
+            "track": 3,
+            "peakDb": -13.6
+          },
+          {
+            "track": 4,
+            "peakDb": -7.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 119.976,
+        "beats": 32,
+        "start": 18256,
+        "end": 723996,
+        "confidence": 0.662,
+        "residualMs": 7.12,
+        "hits": 58
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 0,
+        "end": 706912
+      }
+    },
+    {
+      "id": "2023-044-02",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 2293457,
+      "end": 2998922,
+      "detected": {
+        "start": 2293457,
+        "end": 2998922
+      },
+      "recordedTracks": [
+        0,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2205257,
+        "end": 3087122,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -13.8
+          },
+          {
+            "track": 2,
+            "peakDb": -25
+          },
+          {
+            "track": 3,
+            "peakDb": -11.3
+          },
+          {
+            "track": 4,
+            "peakDb": -5.2
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 119.988,
+        "beats": 32,
+        "start": 2304199,
+        "end": 3009869,
+        "confidence": 0.635,
+        "residualMs": 7.54,
+        "hits": 104
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-044-03",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 3968414,
+      "end": 4321968,
+      "detected": {
+        "start": 3968414,
+        "end": 4321968
+      },
+      "recordedTracks": [
+        0,
+        1
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3880214,
+        "end": 4410168,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -13.7
+          },
+          {
+            "track": 2,
+            "peakDb": -5.2
+          },
+          {
+            "track": 3,
+            "peakDb": null
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 117.222,
+        "beats": 16,
+        "start": 3965298,
+        "end": 4326457,
+        "confidence": 0.58,
+        "residualMs": 7.4,
+        "hits": 11
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-044-04",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 4497859,
+      "end": 5997599,
+      "detected": {
+        "start": 4497859,
+        "end": 5997599
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4409659,
+        "end": 6085799,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -6.3
+          },
+          {
+            "track": 3,
+            "peakDb": -12
+          },
+          {
+            "track": 4,
+            "peakDb": -5.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 120.063,
+        "beats": 68,
+        "start": 4497452,
+        "end": 5996071,
+        "confidence": 0.217,
+        "residualMs": 14.12,
+        "hits": 99
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-044-05",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 6262085,
+      "end": 6614355,
+      "detected": {
+        "start": 6262085,
+        "end": 6614355
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6173885,
+        "end": 6702555,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -13.3
+          },
+          {
+            "track": 2,
+            "peakDb": -17.9
+          },
+          {
+            "track": 3,
+            "peakDb": -12.5
+          },
+          {
+            "track": 4,
+            "peakDb": -8.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 121.101,
+        "beats": 16,
+        "start": 6262144,
+        "end": 6611737,
+        "confidence": 0.437,
+        "residualMs": 11.27,
+        "hits": 9
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-044-06",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 6703255,
+      "end": 8114577,
+      "detected": {
+        "start": 6703255,
+        "end": 8114577
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6615265,
+        "end": 8204103,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.8
+          },
+          {
+            "track": 2,
+            "peakDb": -10.5
+          },
+          {
+            "track": 3,
+            "peakDb": -10.3
+          },
+          {
+            "track": 4,
+            "peakDb": -5.2
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 119.99,
+        "beats": 64,
+        "start": 6703255,
+        "end": 8114577,
+        "confidence": 0.637,
+        "residualMs": 7.32,
+        "hits": 225
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 6703465,
+        "end": 8115903
+      }
+    },
+    {
+      "id": "2023-044-07",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 8290454,
+      "end": 10054924,
+      "detected": {
+        "start": 8290454,
+        "end": 10054924
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 8202254,
+        "end": 10143124,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -8.7
+          },
+          {
+            "track": 2,
+            "peakDb": -11
+          },
+          {
+            "track": 3,
+            "peakDb": -0.4
+          },
+          {
+            "track": 4,
+            "peakDb": -14.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 120.002,
+        "beats": 80,
+        "start": 8291911,
+        "end": 10055876,
+        "confidence": 0.762,
+        "residualMs": 4.7,
+        "hits": 353
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-044-08",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 10143131,
+      "end": 11554467,
+      "detected": {
+        "start": 10143131,
+        "end": 11554467
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 10054931,
+        "end": 11642667,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -14.9
+          },
+          {
+            "track": 2,
+            "peakDb": -3.5
+          },
+          {
+            "track": 3,
+            "peakDb": -9.5
+          },
+          {
+            "track": 4,
+            "peakDb": -3.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 179.759,
+        "beats": 96,
+        "start": 10142716,
+        "end": 11555812,
+        "confidence": 0.25,
+        "residualMs": 11.61,
+        "hits": 191
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-044-09",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 11642284,
+      "end": 12350929,
+      "detected": {
+        "start": 11642284,
+        "end": 12350929
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11554084,
+        "end": 12439129,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.2
+          },
+          {
+            "track": 2,
+            "peakDb": -4.4
+          },
+          {
+            "track": 3,
+            "peakDb": -11.1
+          },
+          {
+            "track": 4,
+            "peakDb": -5.2
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 90.049,
+        "beats": 24,
+        "start": 11642099,
+        "end": 12347313,
+        "confidence": 0.17,
+        "residualMs": 19.2,
+        "hits": 95
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-044-10",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 12435911,
+      "end": 13141560,
+      "detected": {
+        "start": 12435911,
+        "end": 13141560
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12347711,
+        "end": 13229760,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6
+          },
+          {
+            "track": 2,
+            "peakDb": -8.4
+          },
+          {
+            "track": 3,
+            "peakDb": -10.1
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 119.993,
+        "beats": 32,
+        "start": 12435527,
+        "end": 13141167,
+        "confidence": 0.824,
+        "residualMs": 3.86,
+        "hits": 147
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-044-11",
+      "tape": "2023-044#01",
+      "name": "",
+      "bpm": 120,
+      "start": 13317784,
+      "end": 13847512,
+      "detected": {
+        "start": 13317784,
+        "end": 13847512
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 13229584,
+        "end": 13935712,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6.1
+          },
+          {
+            "track": 2,
+            "peakDb": -8.2
+          },
+          {
+            "track": 3,
+            "peakDb": -15
+          },
+          {
+            "track": 4,
+            "peakDb": -5.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 160.113,
+        "beats": 32,
+        "start": 13325487,
+        "end": 13854312,
+        "confidence": 0.54,
+        "residualMs": 8.95,
+        "hits": 94
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-01",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 0,
+      "end": 971856,
+      "detected": {
+        "start": 0,
+        "end": 971856
+      },
+      "recordedTracks": [
+        0,
+        1
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 0,
+        "end": 1060056,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.5
+          },
+          {
+            "track": 2,
+            "peakDb": -5.7
+          },
+          {
+            "track": 3,
+            "peakDb": -14.8
+          },
+          {
+            "track": 4,
+            "peakDb": -20.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 120.001,
+        "beats": 44,
+        "start": 15068,
+        "end": 985264,
+        "confidence": 0.505,
+        "residualMs": 9.57,
+        "hits": 140
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-184-02",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 1058612,
+      "end": 1764498,
+      "detected": {
+        "start": 1058612,
+        "end": 1764498
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 970412,
+        "end": 1852698,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -9.5
+          },
+          {
+            "track": 2,
+            "peakDb": -8
+          },
+          {
+            "track": 3,
+            "peakDb": -11.6
+          },
+          {
+            "track": 4,
+            "peakDb": -3.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 120.002,
+        "beats": 32,
+        "start": 1060578,
+        "end": 1766164,
+        "confidence": 0.99,
+        "residualMs": 1.14,
+        "hits": 96
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-03",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 1852610,
+      "end": 2204386,
+      "detected": {
+        "start": 1852610,
+        "end": 2204386
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 1764410,
+        "end": 2292586,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -3.2
+          },
+          {
+            "track": 3,
+            "peakDb": -1.5
+          },
+          {
+            "track": 4,
+            "peakDb": -8.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 174.636,
+        "beats": 23,
+        "start": 1852260,
+        "end": 2200744,
+        "confidence": 0.334,
+        "residualMs": 12.38,
+        "hits": 27
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-184-04",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 2293130,
+      "end": 2646446,
+      "detected": {
+        "start": 2293130,
+        "end": 2646446
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2204930,
+        "end": 2734646,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.8
+          },
+          {
+            "track": 2,
+            "peakDb": -5
+          },
+          {
+            "track": 3,
+            "peakDb": -3.3
+          },
+          {
+            "track": 4,
+            "peakDb": -5.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 198.545,
+        "beats": 27,
+        "start": 2291402,
+        "end": 2651229,
+        "confidence": 0.442,
+        "residualMs": 9,
+        "hits": 47
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-05",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 3175115,
+      "end": 3526555,
+      "detected": {
+        "start": 3175115,
+        "end": 3526555
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3086915,
+        "end": 3614755,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.5
+          },
+          {
+            "track": 2,
+            "peakDb": -10.1
+          },
+          {
+            "track": 3,
+            "peakDb": -10.6
+          },
+          {
+            "track": 4,
+            "peakDb": -9.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 167.151,
+        "beats": 22,
+        "start": 3174772,
+        "end": 3523032,
+        "confidence": 0.541,
+        "residualMs": 9.14,
+        "hits": 22
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-184-06",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 3615859,
+      "end": 3968434,
+      "detected": {
+        "start": 3615859,
+        "end": 3968434
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3527659,
+        "end": 4056634,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -8.6
+          },
+          {
+            "track": 2,
+            "peakDb": -9.2
+          },
+          {
+            "track": 3,
+            "peakDb": -5.4
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 179.517,
+        "beats": 24,
+        "start": 3615690,
+        "end": 3969440,
+        "confidence": 0.38,
+        "residualMs": 9.01,
+        "hits": 39
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-07",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 4057178,
+      "end": 4410545,
+      "detected": {
+        "start": 4057178,
+        "end": 4410545
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3968978,
+        "end": 4498745,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.4
+          },
+          {
+            "track": 2,
+            "peakDb": -1.6
+          },
+          {
+            "track": 3,
+            "peakDb": -3.7
+          },
+          {
+            "track": 4,
+            "peakDb": -9.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 60.86,
+        "beats": 8,
+        "start": 4056790,
+        "end": 4404603,
+        "confidence": 0.159,
+        "residualMs": 20.52,
+        "hits": 24
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-08",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 4498485,
+      "end": 4851305,
+      "detected": {
+        "start": 4498485,
+        "end": 4851305
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4410285,
+        "end": 4939505,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6
+          },
+          {
+            "track": 2,
+            "peakDb": -3.1
+          },
+          {
+            "track": 3,
+            "peakDb": -2.3
+          },
+          {
+            "track": 4,
+            "peakDb": -13.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 60.072,
+        "beats": 8,
+        "start": 4498170,
+        "end": 4850547,
+        "confidence": 0.039,
+        "residualMs": 30.75,
+        "hits": 46
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-09",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 4939366,
+      "end": 5292187,
+      "detected": {
+        "start": 4939366,
+        "end": 5292187
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4851166,
+        "end": 5380387,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.9
+          },
+          {
+            "track": 2,
+            "peakDb": -8.5
+          },
+          {
+            "track": 3,
+            "peakDb": -4.7
+          },
+          {
+            "track": 4,
+            "peakDb": -8.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 120.292,
+        "beats": 16,
+        "start": 4938956,
+        "end": 5290901,
+        "confidence": 0.357,
+        "residualMs": 13.3,
+        "hits": 38
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-10",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 5379012,
+      "end": 5733231,
+      "detected": {
+        "start": 5379012,
+        "end": 5733231
+      },
+      "recordedTracks": [
+        0,
+        1
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 5290812,
+        "end": 5821431,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": 0
+          },
+          {
+            "track": 2,
+            "peakDb": -6.3
+          },
+          {
+            "track": 3,
+            "peakDb": -6.9
+          },
+          {
+            "track": 4,
+            "peakDb": -16.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 60.601,
+        "beats": 8,
+        "start": 5373710,
+        "end": 5723013,
+        "confidence": 0.092,
+        "residualMs": 26.33,
+        "hits": 22
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-184-11",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 5820845,
+      "end": 6173411,
+      "detected": {
+        "start": 5820845,
+        "end": 6173411
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 5732645,
+        "end": 6261611,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3.3
+          },
+          {
+            "track": 2,
+            "peakDb": -9.4
+          },
+          {
+            "track": 3,
+            "peakDb": -3.2
+          },
+          {
+            "track": 4,
+            "peakDb": -4.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 120.262,
+        "beats": 16,
+        "start": 5820466,
+        "end": 6172498,
+        "confidence": 0.299,
+        "residualMs": 15.07,
+        "hits": 27
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-12",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 6261793,
+      "end": 6615425,
+      "detected": {
+        "start": 6261793,
+        "end": 6615425
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6173593,
+        "end": 6703625,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2.8
+          },
+          {
+            "track": 2,
+            "peakDb": -10.3
+          },
+          {
+            "track": 3,
+            "peakDb": -5.6
+          },
+          {
+            "track": 4,
+            "peakDb": -7.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 120.984,
+        "beats": 16,
+        "start": 6261512,
+        "end": 6611444,
+        "confidence": 0.246,
+        "residualMs": 14.9,
+        "hits": 21
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-184-13",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 7584571,
+      "end": 7937787,
+      "detected": {
+        "start": 7584571,
+        "end": 7937787
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7496371,
+        "end": 8025987,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -5.4
+          },
+          {
+            "track": 3,
+            "peakDb": -6
+          },
+          {
+            "track": 4,
+            "peakDb": -3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 190.044,
+        "beats": 25,
+        "start": 7584192,
+        "end": 7932270,
+        "confidence": 0.41,
+        "residualMs": 8.61,
+        "hits": 32
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-14",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 8026002,
+      "end": 8377400,
+      "detected": {
+        "start": 8026002,
+        "end": 8377400
+      },
+      "recordedTracks": [
+        0,
+        1
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7937802,
+        "end": 8465600,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -0.8
+          },
+          {
+            "track": 2,
+            "peakDb": -14.2
+          },
+          {
+            "track": 3,
+            "peakDb": null
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 60.184,
+        "beats": 8,
+        "start": 8025924,
+        "end": 8377644,
+        "confidence": 0.065,
+        "residualMs": 29.83,
+        "hits": 21
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-184-15",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 8466578,
+      "end": 9172503,
+      "detected": {
+        "start": 8466578,
+        "end": 9172503
+      },
+      "recordedTracks": [
+        0,
+        1
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 8378378,
+        "end": 9260703,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -11.2
+          },
+          {
+            "track": 2,
+            "peakDb": -14.4
+          },
+          {
+            "track": 3,
+            "peakDb": null
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 120.083,
+        "beats": 32,
+        "start": 8466363,
+        "end": 9171474,
+        "confidence": 0.207,
+        "residualMs": 15.9,
+        "hits": 61
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-16",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 10054559,
+      "end": 10409743,
+      "detected": {
+        "start": 10054559,
+        "end": 10409743
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 9966359,
+        "end": 10497943,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -15.7
+          },
+          {
+            "track": 2,
+            "peakDb": -6.7
+          },
+          {
+            "track": 3,
+            "peakDb": -5.3
+          },
+          {
+            "track": 4,
+            "peakDb": -6.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 120.047,
+        "beats": 16,
+        "start": 10064251,
+        "end": 10416914,
+        "confidence": 0.25,
+        "residualMs": 15.78,
+        "hits": 29
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-184-17",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 10495249,
+      "end": 11201373,
+      "detected": {
+        "start": 10495249,
+        "end": 11201373
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 10407049,
+        "end": 11289573,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -12.5
+          },
+          {
+            "track": 2,
+            "peakDb": -4.5
+          },
+          {
+            "track": 3,
+            "peakDb": -11.8
+          },
+          {
+            "track": 4,
+            "peakDb": -17.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 161.963,
+        "beats": 43,
+        "start": 10495437,
+        "end": 11197931,
+        "confidence": 0.292,
+        "residualMs": 12.21,
+        "hits": 82
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-184-18",
+      "tape": "2023-184#01",
+      "name": "",
+      "bpm": 120,
+      "start": 12083492,
+      "end": 12436199,
+      "detected": {
+        "start": 12083492,
+        "end": 12436199
+      },
+      "recordedTracks": [
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11995292,
+        "end": 12524399,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -13.3
+          },
+          {
+            "track": 3,
+            "peakDb": -3.8
+          },
+          {
+            "track": 4,
+            "peakDb": -6.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 143.094,
+        "beats": 19,
+        "start": 12083083,
+        "end": 12434418,
+        "confidence": 0.361,
+        "residualMs": 13.19,
+        "hits": 24
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-188-01",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 0,
+      "end": 356064,
+      "detected": {
+        "start": 0,
+        "end": 356064
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 0,
+        "end": 444264,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2
+          },
+          {
+            "track": 2,
+            "peakDb": -18.3
+          },
+          {
+            "track": 3,
+            "peakDb": -23.4
+          },
+          {
+            "track": 4,
+            "peakDb": -8.2
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 120.095,
+        "beats": 16,
+        "start": 278,
+        "end": 352798,
+        "confidence": 0.417,
+        "residualMs": 11.74,
+        "hits": 41
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-02",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 1410694,
+      "end": 1754246,
+      "detected": {
+        "start": 1410694,
+        "end": 1754246
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 1322494,
+        "end": 1842446,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -4
+          },
+          {
+            "track": 3,
+            "peakDb": -13.1
+          },
+          {
+            "track": 4,
+            "peakDb": -13
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 162.475,
+        "beats": 21,
+        "start": 1410417,
+        "end": 1752414,
+        "confidence": 0.277,
+        "residualMs": 12.42,
+        "hits": 66
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-03",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 2234259,
+      "end": 2705016,
+      "detected": {
+        "start": 2234259,
+        "end": 2705016
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2146059,
+        "end": 2793216,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.7
+          },
+          {
+            "track": 2,
+            "peakDb": -2.6
+          },
+          {
+            "track": 3,
+            "peakDb": -11
+          },
+          {
+            "track": 4,
+            "peakDb": -3.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 90.113,
+        "beats": 16,
+        "start": 2262915,
+        "end": 2732728,
+        "confidence": 0.583,
+        "residualMs": 8.4,
+        "hits": 62
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-04",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 2822160,
+      "end": 3292542,
+      "detected": {
+        "start": 2822160,
+        "end": 3292542
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2734244,
+        "end": 3380999,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.3
+          },
+          {
+            "track": 2,
+            "peakDb": -17.2
+          },
+          {
+            "track": 3,
+            "peakDb": -8.6
+          },
+          {
+            "track": 4,
+            "peakDb": -3.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 90.003,
+        "beats": 16,
+        "start": 2822160,
+        "end": 3292542,
+        "confidence": 0.883,
+        "residualMs": 4.09,
+        "hits": 68
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 2822444,
+        "end": 3292799
+      }
+    },
+    {
+      "id": "2023-188-05",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 3409862,
+      "end": 4352075,
+      "detected": {
+        "start": 3409862,
+        "end": 4352075
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3321662,
+        "end": 4440275,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -13.8
+          },
+          {
+            "track": 3,
+            "peakDb": -5.3
+          },
+          {
+            "track": 4,
+            "peakDb": -4.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 90.001,
+        "beats": 32,
+        "start": 3409821,
+        "end": 4350611,
+        "confidence": 0.325,
+        "residualMs": 10.79,
+        "hits": 123
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-06",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 4469221,
+      "end": 5408629,
+      "detected": {
+        "start": 4469221,
+        "end": 5408629
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4381021,
+        "end": 5496829,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -1.8
+          },
+          {
+            "track": 2,
+            "peakDb": -6.9
+          },
+          {
+            "track": 3,
+            "peakDb": -14.4
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 90.022,
+        "beats": 32,
+        "start": 4469114,
+        "end": 5409687,
+        "confidence": 0.31,
+        "residualMs": 14.71,
+        "hits": 85
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-07",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 5526206,
+      "end": 5996621,
+      "detected": {
+        "start": 5526206,
+        "end": 5996621
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 5438408,
+        "end": 6086417,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -8.3
+          },
+          {
+            "track": 2,
+            "peakDb": -1.2
+          },
+          {
+            "track": 3,
+            "peakDb": -3.5
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 179.994,
+        "beats": 32,
+        "start": 5526206,
+        "end": 5996621,
+        "confidence": 0.715,
+        "residualMs": 6.36,
+        "hits": 114
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 5526608,
+        "end": 5998217
+      }
+    },
+    {
+      "id": "2023-188-08",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 6114454,
+      "end": 7054723,
+      "detected": {
+        "start": 6114454,
+        "end": 7054723
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6026254,
+        "end": 7142923,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -11.2
+          },
+          {
+            "track": 3,
+            "peakDb": -7.2
+          },
+          {
+            "track": 4,
+            "peakDb": -16.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 184.324,
+        "beats": 66,
+        "start": 6114117,
+        "end": 7061555,
+        "confidence": 0.289,
+        "residualMs": 11.32,
+        "hits": 110
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-09",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 7173343,
+      "end": 7644105,
+      "detected": {
+        "start": 7173343,
+        "end": 7644105
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7085143,
+        "end": 7732305,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -0.4
+          },
+          {
+            "track": 2,
+            "peakDb": -2.5
+          },
+          {
+            "track": 3,
+            "peakDb": -7.8
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 90.653,
+        "beats": 16,
+        "start": 7172994,
+        "end": 7640004,
+        "confidence": 0.164,
+        "residualMs": 20.79,
+        "hits": 37
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-10",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 7761142,
+      "end": 8231777,
+      "detected": {
+        "start": 7761142,
+        "end": 8231777
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7672942,
+        "end": 8319977,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -10.3
+          },
+          {
+            "track": 3,
+            "peakDb": -6.1
+          },
+          {
+            "track": 4,
+            "peakDb": -4.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 173.11,
+        "beats": 31,
+        "start": 7760832,
+        "end": 8234669,
+        "confidence": 0.509,
+        "residualMs": 9.76,
+        "hits": 66
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-11",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 8349832,
+      "end": 8819999,
+      "detected": {
+        "start": 8349832,
+        "end": 8819999
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 8261632,
+        "end": 8908199,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -0.6
+          },
+          {
+            "track": 2,
+            "peakDb": -6.4
+          },
+          {
+            "track": 3,
+            "peakDb": -9.4
+          },
+          {
+            "track": 4,
+            "peakDb": -5.2
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 90.731,
+        "beats": 16,
+        "start": 8349538,
+        "end": 8816147,
+        "confidence": 0.153,
+        "residualMs": 20.88,
+        "hits": 35
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-12",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 8943962,
+      "end": 9414330,
+      "detected": {
+        "start": 8943962,
+        "end": 9414330
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 8849699,
+        "end": 9496775,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.2
+          },
+          {
+            "track": 2,
+            "peakDb": -2
+          },
+          {
+            "track": 3,
+            "peakDb": 0
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 90.006,
+        "beats": 16,
+        "start": 8943962,
+        "end": 9414330,
+        "confidence": 1,
+        "residualMs": 2.34,
+        "hits": 59
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 8937899,
+        "end": 9408575
+      }
+    },
+    {
+      "id": "2023-188-13",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 9525810,
+      "end": 9996801,
+      "detected": {
+        "start": 9525810,
+        "end": 9996801
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 9437610,
+        "end": 10085001,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -6.1
+          },
+          {
+            "track": 3,
+            "peakDb": -9.8
+          },
+          {
+            "track": 4,
+            "peakDb": -7.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 89.996,
+        "beats": 16,
+        "start": 9534305,
+        "end": 10004724,
+        "confidence": 0.514,
+        "residualMs": 9.65,
+        "hits": 47
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-14",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 10113358,
+      "end": 10583584,
+      "detected": {
+        "start": 10113358,
+        "end": 10583584
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 10025158,
+        "end": 10671784,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.5
+          },
+          {
+            "track": 2,
+            "peakDb": -5.2
+          },
+          {
+            "track": 3,
+            "peakDb": -3.8
+          },
+          {
+            "track": 4,
+            "peakDb": -23.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 90.03,
+        "beats": 16,
+        "start": 10125906,
+        "end": 10596150,
+        "confidence": 0.547,
+        "residualMs": 9.04,
+        "hits": 53
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-15",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 10671725,
+      "end": 11024999,
+      "detected": {
+        "start": 10671725,
+        "end": 11024999
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 10583525,
+        "end": 11113199,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -41.2
+          },
+          {
+            "track": 2,
+            "peakDb": 0
+          },
+          {
+            "track": 3,
+            "peakDb": -11.1
+          },
+          {
+            "track": 4,
+            "peakDb": -5.2
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 120.037,
+        "beats": 16,
+        "start": 10681891,
+        "end": 11034583,
+        "confidence": 0.568,
+        "residualMs": 8.66,
+        "hits": 51
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-188-16",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 11112766,
+      "end": 12171254,
+      "detected": {
+        "start": 11112766,
+        "end": 12171254
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11024566,
+        "end": 12259454,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -8.5
+          },
+          {
+            "track": 2,
+            "peakDb": -3.1
+          },
+          {
+            "track": 3,
+            "peakDb": -9.1
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 62.005,
+        "beats": 25,
+        "start": 11112496,
+        "end": 12179351,
+        "confidence": 0.053,
+        "residualMs": 30.64,
+        "hits": 118
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-188-17",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 12259883,
+      "end": 12946571,
+      "detected": {
+        "start": 12259883,
+        "end": 12946571
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12171683,
+        "end": 13034771,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6.7
+          },
+          {
+            "track": 2,
+            "peakDb": -9.1
+          },
+          {
+            "track": 3,
+            "peakDb": -4.5
+          },
+          {
+            "track": 4,
+            "peakDb": -14.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 172.212,
+        "beats": 45,
+        "start": 12269411,
+        "end": 12960827,
+        "confidence": 0.294,
+        "residualMs": 11.51,
+        "hits": 64
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-18",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 13053087,
+      "end": 14465677,
+      "detected": {
+        "start": 13053087,
+        "end": 14465677
+      },
+      "recordedTracks": [
+        0,
+        1
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12964887,
+        "end": 14553877,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": 0
+          },
+          {
+            "track": 2,
+            "peakDb": -4.2
+          },
+          {
+            "track": 3,
+            "peakDb": -1.8
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 120.054,
+        "beats": 64,
+        "start": 13052686,
+        "end": 14463255,
+        "confidence": 0.255,
+        "residualMs": 14.16,
+        "hits": 143
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-188-19",
+      "tape": "2023-188#01",
+      "name": "",
+      "bpm": 120,
+      "start": 14552547,
+      "end": 15258938,
+      "detected": {
+        "start": 14552547,
+        "end": 15258938
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 14464347,
+        "end": 15347138,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6.9
+          },
+          {
+            "track": 2,
+            "peakDb": -1.4
+          },
+          {
+            "track": 3,
+            "peakDb": -1.2
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 90.234,
+        "beats": 24,
+        "start": 14552193,
+        "end": 15255967,
+        "confidence": 0.265,
+        "residualMs": 16.28,
+        "hits": 96
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-01",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 0,
+      "end": 353450,
+      "detected": {
+        "start": 0,
+        "end": 353450
+      },
+      "recordedTracks": [
+        0,
+        1
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 0,
+        "end": 529850,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6.1
+          },
+          {
+            "track": 2,
+            "peakDb": -4
+          },
+          {
+            "track": 3,
+            "peakDb": -10.5
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 120.086,
+        "beats": 16,
+        "start": 10773,
+        "end": 363322,
+        "confidence": 0.542,
+        "residualMs": 9.13,
+        "hits": 49
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-213-02",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 440325,
+      "end": 798195,
+      "detected": {
+        "start": 440325,
+        "end": 798195
+      },
+      "recordedTracks": [
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 263925,
+        "end": 974595,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.7
+          },
+          {
+            "track": 2,
+            "peakDb": -1.1
+          },
+          {
+            "track": 3,
+            "peakDb": -9.6
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 60.026,
+        "beats": 8,
+        "start": 460060,
+        "end": 812707,
+        "confidence": 0.119,
+        "residualMs": 24.3,
+        "hits": 12
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-03",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 882181,
+      "end": 1058253,
+      "detected": {
+        "start": 882181,
+        "end": 1058253
+      },
+      "recordedTracks": [
+        0,
+        1
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 705781,
+        "end": 1234653,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.3
+          },
+          {
+            "track": 2,
+            "peakDb": 0
+          },
+          {
+            "track": 3,
+            "peakDb": -11
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 61.244,
+        "beats": 4,
+        "start": 881809,
+        "end": 1054626,
+        "confidence": 0.082,
+        "residualMs": 26.04,
+        "hits": 23
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-213-04",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 1676615,
+      "end": 2381828,
+      "detected": {
+        "start": 1676615,
+        "end": 2381828
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 1500215,
+        "end": 2558228,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2.3
+          },
+          {
+            "track": 2,
+            "peakDb": -1.9
+          },
+          {
+            "track": 3,
+            "peakDb": -12.1
+          },
+          {
+            "track": 4,
+            "peakDb": -3.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 60.042,
+        "beats": 16,
+        "start": 1686839,
+        "end": 2391944,
+        "confidence": 0.192,
+        "residualMs": 19.52,
+        "hits": 51
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-213-05",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 2469226,
+      "end": 2823473,
+      "detected": {
+        "start": 2469226,
+        "end": 2823473
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2292826,
+        "end": 2999873,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.5
+          },
+          {
+            "track": 2,
+            "peakDb": -1.9
+          },
+          {
+            "track": 3,
+            "peakDb": -8.4
+          },
+          {
+            "track": 4,
+            "peakDb": -3.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 59.709,
+        "beats": 8,
+        "start": 2509789,
+        "end": 2864308,
+        "confidence": 0.282,
+        "residualMs": 14.48,
+        "hits": 18
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-06",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 2910954,
+      "end": 3572442,
+      "detected": {
+        "start": 2910954,
+        "end": 3572442
+      },
+      "recordedTracks": [
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2734645,
+        "end": 3747957,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.2
+          },
+          {
+            "track": 2,
+            "peakDb": -1.9
+          },
+          {
+            "track": 3,
+            "peakDb": -8.1
+          },
+          {
+            "track": 4,
+            "peakDb": -0.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 120.002,
+        "beats": 30,
+        "start": 2910954,
+        "end": 3572442,
+        "confidence": 0.898,
+        "residualMs": 4.08,
+        "hits": 124
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 2911045,
+        "end": 3571557
+      }
+    },
+    {
+      "id": "2023-213-07",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 3705942,
+      "end": 4057562,
+      "detected": {
+        "start": 3705942,
+        "end": 4057562
+      },
+      "recordedTracks": [
+        0,
+        1,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3529542,
+        "end": 4233962,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.2
+          },
+          {
+            "track": 2,
+            "peakDb": -6.3
+          },
+          {
+            "track": 3,
+            "peakDb": -8.2
+          },
+          {
+            "track": 4,
+            "peakDb": -0.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 120.02,
+        "beats": 16,
+        "start": 3716684,
+        "end": 4069425,
+        "confidence": 0.581,
+        "residualMs": 8.43,
+        "hits": 43
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-08",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 4147015,
+      "end": 4851997,
+      "detected": {
+        "start": 4147015,
+        "end": 4851997
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3970615,
+        "end": 5028397,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.2
+          },
+          {
+            "track": 2,
+            "peakDb": -2.8
+          },
+          {
+            "track": 3,
+            "peakDb": -5.4
+          },
+          {
+            "track": 4,
+            "peakDb": -4.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 182.226,
+        "beats": 49,
+        "start": 4146729,
+        "end": 4858232,
+        "confidence": 0.295,
+        "residualMs": 11.17,
+        "hits": 124
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-213-09",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 4940253,
+      "end": 5292206,
+      "detected": {
+        "start": 4940253,
+        "end": 5292206
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4763853,
+        "end": 5468606,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.9
+          },
+          {
+            "track": 2,
+            "peakDb": -4.5
+          },
+          {
+            "track": 3,
+            "peakDb": -5.4
+          },
+          {
+            "track": 4,
+            "peakDb": -8.2
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 60.062,
+        "beats": 8,
+        "start": 4939870,
+        "end": 5292304,
+        "confidence": 0.163,
+        "residualMs": 21.15,
+        "hits": 37
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-10",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 5380725,
+      "end": 6087462,
+      "detected": {
+        "start": 5380725,
+        "end": 6087462
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 5204325,
+        "end": 6263862,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.7
+          },
+          {
+            "track": 2,
+            "peakDb": -5.9
+          },
+          {
+            "track": 3,
+            "peakDb": 0
+          },
+          {
+            "track": 4,
+            "peakDb": -2.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 121.046,
+        "beats": 32,
+        "start": 5394459,
+        "end": 6093960,
+        "confidence": 0.195,
+        "residualMs": 15.91,
+        "hits": 65
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-11",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 6174418,
+      "end": 6879939,
+      "detected": {
+        "start": 6174418,
+        "end": 6879939
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 5998018,
+        "end": 7056339,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": 0
+          },
+          {
+            "track": 2,
+            "peakDb": -4.4
+          },
+          {
+            "track": 3,
+            "peakDb": 0
+          },
+          {
+            "track": 4,
+            "peakDb": -0.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 60.227,
+        "beats": 16,
+        "start": 6174216,
+        "end": 6877153,
+        "confidence": 0.061,
+        "residualMs": 29.86,
+        "hits": 62
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-213-12",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 9702685,
+      "end": 11113199,
+      "detected": {
+        "start": 9702685,
+        "end": 11113199
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 9526285,
+        "end": 11289599,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -1.5
+          },
+          {
+            "track": 2,
+            "peakDb": -1.5
+          },
+          {
+            "track": 3,
+            "peakDb": -14.4
+          },
+          {
+            "track": 4,
+            "peakDb": -10.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 67.928,
+        "beats": 36,
+        "start": 9702267,
+        "end": 11104568,
+        "confidence": 0.027,
+        "residualMs": 31.97,
+        "hits": 180
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-13",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 11466162,
+      "end": 11936106,
+      "detected": {
+        "start": 11466162,
+        "end": 11936106
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11289762,
+        "end": 12112506,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.4
+          },
+          {
+            "track": 2,
+            "peakDb": -1.7
+          },
+          {
+            "track": 3,
+            "peakDb": -2
+          },
+          {
+            "track": 4,
+            "peakDb": -12.9
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 90.109,
+        "beats": 16,
+        "start": 11480125,
+        "end": 11949957,
+        "confidence": 0.291,
+        "residualMs": 15.18,
+        "hits": 64
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-14",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 11995184,
+      "end": 12465599,
+      "detected": {
+        "start": 11995184,
+        "end": 12465599
+      },
+      "recordedTracks": [
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11818784,
+        "end": 12641999,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.6
+          },
+          {
+            "track": 2,
+            "peakDb": -4.2
+          },
+          {
+            "track": 3,
+            "peakDb": -0.3
+          },
+          {
+            "track": 4,
+            "peakDb": -8.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 194.379,
+        "beats": 35,
+        "start": 11995630,
+        "end": 12472069,
+        "confidence": 0.362,
+        "residualMs": 9.03,
+        "hits": 68
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-15",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 12583249,
+      "end": 13053828,
+      "detected": {
+        "start": 12583249,
+        "end": 13053828
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12406849,
+        "end": 13230228,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -9.9
+          },
+          {
+            "track": 2,
+            "peakDb": -13.7
+          },
+          {
+            "track": 3,
+            "peakDb": -0.3
+          },
+          {
+            "track": 4,
+            "peakDb": -4.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 169.587,
+        "beats": 30,
+        "start": 12583122,
+        "end": 13051200,
+        "confidence": 0.386,
+        "residualMs": 10.11,
+        "hits": 37
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-16",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 13112441,
+      "end": 13583658,
+      "detected": {
+        "start": 13112441,
+        "end": 13583658
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12936041,
+        "end": 13760058,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.4
+          },
+          {
+            "track": 2,
+            "peakDb": -12.3
+          },
+          {
+            "track": 3,
+            "peakDb": -0.9
+          },
+          {
+            "track": 4,
+            "peakDb": -1.9
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 90.169,
+        "beats": 16,
+        "start": 13112004,
+        "end": 13581521,
+        "confidence": 0.131,
+        "residualMs": 19.15,
+        "hits": 94
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-17",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 13641616,
+      "end": 14111577,
+      "detected": {
+        "start": 13641616,
+        "end": 14111577
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 13465216,
+        "end": 14287977,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.3
+          },
+          {
+            "track": 2,
+            "peakDb": -9.4
+          },
+          {
+            "track": 3,
+            "peakDb": -0.9
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 90.239,
+        "beats": 16,
+        "start": 13641732,
+        "end": 14110886,
+        "confidence": 0.221,
+        "residualMs": 17.55,
+        "hits": 56
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-18",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 14170855,
+      "end": 14642057,
+      "detected": {
+        "start": 14170855,
+        "end": 14642057
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 13994455,
+        "end": 14818457,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.3
+          },
+          {
+            "track": 2,
+            "peakDb": -5
+          },
+          {
+            "track": 3,
+            "peakDb": -2.6
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 90.413,
+        "beats": 16,
+        "start": 14177386,
+        "end": 14645637,
+        "confidence": 0.312,
+        "residualMs": 13.75,
+        "hits": 69
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-213-19",
+      "tape": "2023-213#01",
+      "name": "",
+      "bpm": 60,
+      "start": 14699940,
+      "end": 15640956,
+      "detected": {
+        "start": 14699940,
+        "end": 15640956
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 14523540,
+        "end": 15817356,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.4
+          },
+          {
+            "track": 2,
+            "peakDb": -4.3
+          },
+          {
+            "track": 3,
+            "peakDb": -6.2
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 90.269,
+        "beats": 32,
+        "start": 14699633,
+        "end": 15637632,
+        "confidence": 0.141,
+        "residualMs": 21.21,
+        "hits": 92
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-01",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 1555,
+      "end": 847036,
+      "detected": {
+        "start": 1555,
+        "end": 847036
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 0,
+        "end": 935236,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.1
+          },
+          {
+            "track": 2,
+            "peakDb": -8.8
+          },
+          {
+            "track": 3,
+            "peakDb": -2.3
+          },
+          {
+            "track": 4,
+            "peakDb": -8.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 100.753,
+        "beats": 32,
+        "start": -795,
+        "end": 839598,
+        "confidence": 0.181,
+        "residualMs": 17.69,
+        "hits": 73
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-02",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 913496,
+      "end": 1684025,
+      "detected": {
+        "start": 913496,
+        "end": 1684025
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 825296,
+        "end": 1772225,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2.9
+          },
+          {
+            "track": 2,
+            "peakDb": -17.4
+          },
+          {
+            "track": 3,
+            "peakDb": -4
+          },
+          {
+            "track": 4,
+            "peakDb": -7.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 110.11,
+        "beats": 32,
+        "start": 913285,
+        "end": 1682261,
+        "confidence": 0.239,
+        "residualMs": 16.59,
+        "hits": 129
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-03",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 1765670,
+      "end": 2470662,
+      "detected": {
+        "start": 1765670,
+        "end": 2470662
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 1677470,
+        "end": 2558862,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2.5
+          },
+          {
+            "track": 2,
+            "peakDb": -17.4
+          },
+          {
+            "track": 3,
+            "peakDb": -1.3
+          },
+          {
+            "track": 4,
+            "peakDb": -5.9
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 195.066,
+        "beats": 52,
+        "start": 1765274,
+        "end": 2470636,
+        "confidence": 0.317,
+        "residualMs": 9.97,
+        "hits": 209
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-04",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 2558034,
+      "end": 2911754,
+      "detected": {
+        "start": 2558034,
+        "end": 2911754
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2469834,
+        "end": 2999954,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -9
+          },
+          {
+            "track": 2,
+            "peakDb": -5.5
+          },
+          {
+            "track": 3,
+            "peakDb": -2.3
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 179.819,
+        "beats": 24,
+        "start": 2559418,
+        "end": 2912572,
+        "confidence": 0.402,
+        "residualMs": 7.15,
+        "hits": 31
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-05",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 2999797,
+      "end": 3350793,
+      "detected": {
+        "start": 2999797,
+        "end": 3350793
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2911597,
+        "end": 3438993,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.1
+          },
+          {
+            "track": 2,
+            "peakDb": -3.9
+          },
+          {
+            "track": 3,
+            "peakDb": -9.2
+          },
+          {
+            "track": 4,
+            "peakDb": -5.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 61.274,
+        "beats": 8,
+        "start": 2999492,
+        "end": 3344959,
+        "confidence": 0.081,
+        "residualMs": 27.09,
+        "hits": 43
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-06",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 3440007,
+      "end": 3793442,
+      "detected": {
+        "start": 3440007,
+        "end": 3793442
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3351807,
+        "end": 3881642,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -15.2
+          },
+          {
+            "track": 3,
+            "peakDb": -3.2
+          },
+          {
+            "track": 4,
+            "peakDb": -16.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 60.489,
+        "beats": 8,
+        "start": 3450037,
+        "end": 3799984,
+        "confidence": 0.238,
+        "residualMs": 17.35,
+        "hits": 31
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-07",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 3881647,
+      "end": 4234321,
+      "detected": {
+        "start": 3881647,
+        "end": 4234321
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3793447,
+        "end": 4322521,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -9.1
+          },
+          {
+            "track": 2,
+            "peakDb": -9
+          },
+          {
+            "track": 3,
+            "peakDb": -2.1
+          },
+          {
+            "track": 4,
+            "peakDb": -9.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 60.814,
+        "beats": 8,
+        "start": 3902045,
+        "end": 4250123,
+        "confidence": 0.106,
+        "residualMs": 25.1,
+        "hits": 41
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-08",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 4321938,
+      "end": 4586947,
+      "detected": {
+        "start": 4321938,
+        "end": 4586947
+      },
+      "recordedTracks": [
+        0,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4233738,
+        "end": 4675147,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -0.5
+          },
+          {
+            "track": 2,
+            "peakDb": -8
+          },
+          {
+            "track": 3,
+            "peakDb": -3.1
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 155.656,
+        "beats": 16,
+        "start": 4322367,
+        "end": 4594352,
+        "confidence": 0.306,
+        "residualMs": 11.79,
+        "hits": 38
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-09",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 4675787,
+      "end": 5027399,
+      "detected": {
+        "start": 4675787,
+        "end": 5027399
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4587587,
+        "end": 5115599,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -7.1
+          },
+          {
+            "track": 3,
+            "peakDb": -2.7
+          },
+          {
+            "track": 4,
+            "peakDb": -3.9
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 122.975,
+        "beats": 16,
+        "start": 4683656,
+        "end": 5027920,
+        "confidence": 0.323,
+        "residualMs": 12.81,
+        "hits": 33
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-10",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 5116106,
+      "end": 5468594,
+      "detected": {
+        "start": 5116106,
+        "end": 5468594
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 5027906,
+        "end": 5556794,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3.9
+          },
+          {
+            "track": 2,
+            "peakDb": -7
+          },
+          {
+            "track": 3,
+            "peakDb": -1
+          },
+          {
+            "track": 4,
+            "peakDb": -8.9
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 60.258,
+        "beats": 8,
+        "start": 5115852,
+        "end": 5467141,
+        "confidence": 0.068,
+        "residualMs": 29.87,
+        "hits": 24
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-11",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 5555239,
+      "end": 6260840,
+      "detected": {
+        "start": 5555239,
+        "end": 6260840
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 5467566,
+        "end": 6350260,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2.4
+          },
+          {
+            "track": 2,
+            "peakDb": -5.5
+          },
+          {
+            "track": 3,
+            "peakDb": 0
+          },
+          {
+            "track": 4,
+            "peakDb": -3.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 120,
+        "beats": 32,
+        "start": 5555239,
+        "end": 6260840,
+        "confidence": 0.62,
+        "residualMs": 7.79,
+        "hits": 99
+      },
+      "timing": "drums",
+      "clipDetected": {
+        "start": 5555766,
+        "end": 6262060
+      }
+    },
+    {
+      "id": "2023-222-12",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 6350304,
+      "end": 6879599,
+      "detected": {
+        "start": 6350304,
+        "end": 6879599
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6262104,
+        "end": 6967799,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": 0
+          },
+          {
+            "track": 2,
+            "peakDb": -3.5
+          },
+          {
+            "track": 3,
+            "peakDb": -3.7
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 79.839,
+        "beats": 16,
+        "start": 6349801,
+        "end": 6880069,
+        "confidence": 0.143,
+        "residualMs": 22.03,
+        "hits": 29
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-13",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 6945006,
+      "end": 7474143,
+      "detected": {
+        "start": 6945006,
+        "end": 7474143
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6856806,
+        "end": 7562343,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": 0
+          },
+          {
+            "track": 2,
+            "peakDb": 0
+          },
+          {
+            "track": 3,
+            "peakDb": 0
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 80.133,
+        "beats": 16,
+        "start": 6945726,
+        "end": 7474049,
+        "confidence": 0.178,
+        "residualMs": 20.27,
+        "hits": 47
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-14",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 7541085,
+      "end": 8070417,
+      "detected": {
+        "start": 7541085,
+        "end": 8070417
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7452885,
+        "end": 8158617,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.5
+          },
+          {
+            "track": 2,
+            "peakDb": -2
+          },
+          {
+            "track": 3,
+            "peakDb": -1.4
+          },
+          {
+            "track": 4,
+            "peakDb": -5.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 80.188,
+        "beats": 16,
+        "start": 7540746,
+        "end": 8068706,
+        "confidence": 0.164,
+        "residualMs": 20.28,
+        "hits": 73
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-15",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 8136455,
+      "end": 8666468,
+      "detected": {
+        "start": 8136455,
+        "end": 8672743
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 8048255,
+        "end": 8760943,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.9
+          },
+          {
+            "track": 2,
+            "peakDb": 0
+          },
+          {
+            "track": 3,
+            "peakDb": -1.9
+          },
+          {
+            "track": 4,
+            "peakDb": -0.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 80.01,
+        "beats": 16,
+        "start": 8151109,
+        "end": 8680243,
+        "confidence": 0.218,
+        "residualMs": 17.06,
+        "hits": 50
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-16",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 8731604,
+      "end": 9261631,
+      "detected": {
+        "start": 8731604,
+        "end": 9261631
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 8643404,
+        "end": 9349831,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.6
+          },
+          {
+            "track": 2,
+            "peakDb": -0.1
+          },
+          {
+            "track": 3,
+            "peakDb": -1.8
+          },
+          {
+            "track": 4,
+            "peakDb": -7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 80.509,
+        "beats": 16,
+        "start": 8731446,
+        "end": 9257298,
+        "confidence": 0.124,
+        "residualMs": 23.48,
+        "hits": 55
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-17",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 9327394,
+      "end": 9856517,
+      "detected": {
+        "start": 9327394,
+        "end": 9856517
+      },
+      "recordedTracks": [
+        1,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 9239194,
+        "end": 9944717,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -16.9
+          },
+          {
+            "track": 2,
+            "peakDb": -9.7
+          },
+          {
+            "track": 3,
+            "peakDb": -3.7
+          },
+          {
+            "track": 4,
+            "peakDb": -1.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 160.106,
+        "beats": 32,
+        "start": 9327202,
+        "end": 9856053,
+        "confidence": 0.687,
+        "residualMs": 6.76,
+        "hits": 62
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-18",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 9967379,
+      "end": 10143997,
+      "detected": {
+        "start": 9967379,
+        "end": 10143997
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 9879179,
+        "end": 10232197,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2
+          },
+          {
+            "track": 2,
+            "peakDb": -6.9
+          },
+          {
+            "track": 3,
+            "peakDb": -0.1
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 121.589,
+        "beats": 8,
+        "start": 9967008,
+        "end": 10141102,
+        "confidence": 0.32,
+        "residualMs": 14.39,
+        "hits": 21
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-19",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 10232083,
+      "end": 10937222,
+      "detected": {
+        "start": 10232083,
+        "end": 10937222
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 10143883,
+        "end": 11025422,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -13.8
+          },
+          {
+            "track": 2,
+            "peakDb": -8.5
+          },
+          {
+            "track": 3,
+            "peakDb": -3.1
+          },
+          {
+            "track": 4,
+            "peakDb": -2.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 60.027,
+        "beats": 16,
+        "start": 10240193,
+        "end": 10945480,
+        "confidence": 0.091,
+        "residualMs": 26.38,
+        "hits": 86
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-20",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 11024924,
+      "end": 11730573,
+      "detected": {
+        "start": 11024924,
+        "end": 11730573
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 10936724,
+        "end": 11818773,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6.7
+          },
+          {
+            "track": 2,
+            "peakDb": -12.6
+          },
+          {
+            "track": 3,
+            "peakDb": -8.8
+          },
+          {
+            "track": 4,
+            "peakDb": -4.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 180,
+        "beats": 48,
+        "start": 11032077,
+        "end": 11737677,
+        "confidence": 0.99,
+        "residualMs": 2.64,
+        "hits": 96
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-222-21",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 11819598,
+      "end": 12526463,
+      "detected": {
+        "start": 11819598,
+        "end": 12526463
+      },
+      "recordedTracks": [
+        0,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11731398,
+        "end": 12614663,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3.1
+          },
+          {
+            "track": 2,
+            "peakDb": null
+          },
+          {
+            "track": 3,
+            "peakDb": -13.3
+          },
+          {
+            "track": 4,
+            "peakDb": -12.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 127.37,
+        "beats": 34,
+        "start": 11830542,
+        "end": 12536864,
+        "confidence": 0.317,
+        "residualMs": 11.68,
+        "hits": 51
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-22",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 12701716,
+      "end": 13970880,
+      "detected": {
+        "start": 12701716,
+        "end": 13970880
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12613516,
+        "end": 14059080,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.7
+          },
+          {
+            "track": 2,
+            "peakDb": -10.9
+          },
+          {
+            "track": 3,
+            "peakDb": -1.8
+          },
+          {
+            "track": 4,
+            "peakDb": -14
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 100.15,
+        "beats": 48,
+        "start": 12701407,
+        "end": 13969587,
+        "confidence": 0.242,
+        "residualMs": 16.68,
+        "hits": 141
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-222-23",
+      "tape": "2023-222#01",
+      "name": "",
+      "bpm": 180,
+      "start": 14171012,
+      "end": 15111442,
+      "detected": {
+        "start": 14171012,
+        "end": 15111442
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 14082812,
+        "end": 15199642,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2.7
+          },
+          {
+            "track": 2,
+            "peakDb": -9.5
+          },
+          {
+            "track": 3,
+            "peakDb": -10.2
+          },
+          {
+            "track": 4,
+            "peakDb": -5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 89.916,
+        "beats": 32,
+        "start": 14184715,
+        "end": 15126394,
+        "confidence": 0.13,
+        "residualMs": 20.68,
+        "hits": 109
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-01",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 0,
+      "end": 352799,
+      "detected": {
+        "start": 0,
+        "end": 352799
+      },
+      "recordedTracks": [
+        0,
+        1,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 0,
+        "end": 440999,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.9
+          },
+          {
+            "track": 2,
+            "peakDb": -1
+          },
+          {
+            "track": 3,
+            "peakDb": -26.8
+          },
+          {
+            "track": 4,
+            "peakDb": -3.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 140.012,
+        "beats": 19,
+        "start": 8118,
+        "end": 367188,
+        "confidence": 0.257,
+        "residualMs": 11.82,
+        "hits": 45
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-02",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 354341,
+      "end": 706821,
+      "detected": {
+        "start": 354341,
+        "end": 706821
+      },
+      "recordedTracks": [
+        0,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 266141,
+        "end": 795021,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.7
+          },
+          {
+            "track": 2,
+            "peakDb": -4.5
+          },
+          {
+            "track": 3,
+            "peakDb": -23.8
+          },
+          {
+            "track": 4,
+            "peakDb": -4.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 60.659,
+        "beats": 8,
+        "start": 364246,
+        "end": 713211,
+        "confidence": 0.127,
+        "residualMs": 21.72,
+        "hits": 38
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-03",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 794001,
+      "end": 1134673,
+      "detected": {
+        "start": 794001,
+        "end": 1134673
+      },
+      "recordedTracks": [
+        0,
+        1
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 705801,
+        "end": 1222873,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -15.9
+          },
+          {
+            "track": 2,
+            "peakDb": -7.4
+          },
+          {
+            "track": 3,
+            "peakDb": -47.6
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 82.568,
+        "beats": 11,
+        "start": 793668,
+        "end": 1146176,
+        "confidence": 0.241,
+        "residualMs": 17.23,
+        "hits": 8
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-04",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 1234296,
+      "end": 1587600,
+      "detected": {
+        "start": 1234296,
+        "end": 1587600
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 1146096,
+        "end": 1675800,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6
+          },
+          {
+            "track": 2,
+            "peakDb": -5.6
+          },
+          {
+            "track": 3,
+            "peakDb": -13.7
+          },
+          {
+            "track": 4,
+            "peakDb": -2.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 60.041,
+        "beats": 8,
+        "start": 1275097,
+        "end": 1627658,
+        "confidence": 0.103,
+        "residualMs": 25.76,
+        "hits": 13
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-05",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 1693786,
+      "end": 2256022,
+      "detected": {
+        "start": 1693786,
+        "end": 2258707
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 1605586,
+        "end": 2346907,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.3
+          },
+          {
+            "track": 2,
+            "peakDb": -4.6
+          },
+          {
+            "track": 3,
+            "peakDb": -13
+          },
+          {
+            "track": 4,
+            "peakDb": -0.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 75.202,
+        "beats": 16,
+        "start": 1693439,
+        "end": 2256403,
+        "confidence": 0.237,
+        "residualMs": 16.82,
+        "hits": 78
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-06",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 2399353,
+      "end": 2682633,
+      "detected": {
+        "start": 2399353,
+        "end": 2682633
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2311153,
+        "end": 2770833,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": 0
+          },
+          {
+            "track": 2,
+            "peakDb": -8.5
+          },
+          {
+            "track": 3,
+            "peakDb": -19.1
+          },
+          {
+            "track": 4,
+            "peakDb": -8.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 74.943,
+        "beats": 8,
+        "start": 2399014,
+        "end": 2681470,
+        "confidence": 0.172,
+        "residualMs": 20.58,
+        "hits": 22
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-07",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 2751661,
+      "end": 3033989,
+      "detected": {
+        "start": 2751661,
+        "end": 3033989
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2663461,
+        "end": 3122189,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3.2
+          },
+          {
+            "track": 2,
+            "peakDb": -10.8
+          },
+          {
+            "track": 3,
+            "peakDb": -12.1
+          },
+          {
+            "track": 4,
+            "peakDb": -8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 150.201,
+        "beats": 16,
+        "start": 2751326,
+        "end": 3033188,
+        "confidence": 0.444,
+        "residualMs": 9.43,
+        "hits": 58
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-08",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 3104362,
+      "end": 3669531,
+      "detected": {
+        "start": 3104362,
+        "end": 3669531
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3016162,
+        "end": 3757731,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -14.6
+          },
+          {
+            "track": 2,
+            "peakDb": -5.3
+          },
+          {
+            "track": 3,
+            "peakDb": -7.2
+          },
+          {
+            "track": 4,
+            "peakDb": -8.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 74.994,
+        "beats": 16,
+        "start": 3103985,
+        "end": 3668508,
+        "confidence": 0.201,
+        "residualMs": 16.69,
+        "hits": 41
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-09",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 3739183,
+      "end": 4304431,
+      "detected": {
+        "start": 3739183,
+        "end": 4304431
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3650983,
+        "end": 4392631,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -14.2
+          },
+          {
+            "track": 2,
+            "peakDb": -5.3
+          },
+          {
+            "track": 3,
+            "peakDb": -2.8
+          },
+          {
+            "track": 4,
+            "peakDb": -5.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 75.567,
+        "beats": 16,
+        "start": 3755716,
+        "end": 4315958,
+        "confidence": 0.192,
+        "residualMs": 19.03,
+        "hits": 82
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-10",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 4374109,
+      "end": 4938983,
+      "detected": {
+        "start": 4374109,
+        "end": 4938983
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4285909,
+        "end": 5027183,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -11.2
+          },
+          {
+            "track": 2,
+            "peakDb": -4.2
+          },
+          {
+            "track": 3,
+            "peakDb": 0
+          },
+          {
+            "track": 4,
+            "peakDb": -8.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 75.252,
+        "beats": 16,
+        "start": 4373768,
+        "end": 4936357,
+        "confidence": 0.118,
+        "residualMs": 24.08,
+        "hits": 56
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-11",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 5008999,
+      "end": 5573229,
+      "detected": {
+        "start": 5008999,
+        "end": 5573229
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4920799,
+        "end": 5661429,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -9.9
+          },
+          {
+            "track": 2,
+            "peakDb": -6.2
+          },
+          {
+            "track": 3,
+            "peakDb": -3.8
+          },
+          {
+            "track": 4,
+            "peakDb": -8.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 75.409,
+        "beats": 16,
+        "start": 5008693,
+        "end": 5570108,
+        "confidence": 0.229,
+        "residualMs": 17.42,
+        "hits": 32
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-12",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 5645145,
+      "end": 6208970,
+      "detected": {
+        "start": 5645145,
+        "end": 6208970
+      },
+      "recordedTracks": [
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 5556945,
+        "end": 6297170,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -11.7
+          },
+          {
+            "track": 2,
+            "peakDb": -13.2
+          },
+          {
+            "track": 3,
+            "peakDb": -11.3
+          },
+          {
+            "track": 4,
+            "peakDb": -12.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 141.069,
+        "beats": 30,
+        "start": 5644748,
+        "end": 6207451,
+        "confidence": 0.536,
+        "residualMs": 9.23,
+        "hits": 32
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-13",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 6279253,
+      "end": 6843749,
+      "detected": {
+        "start": 6279253,
+        "end": 6843749
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6191053,
+        "end": 6931949,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7
+          },
+          {
+            "track": 2,
+            "peakDb": -10.7
+          },
+          {
+            "track": 3,
+            "peakDb": -7.9
+          },
+          {
+            "track": 4,
+            "peakDb": -5.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 172.387,
+        "beats": 37,
+        "start": 6279043,
+        "end": 6846964,
+        "confidence": 0.218,
+        "residualMs": 12.28,
+        "hits": 138
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-14",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 6915051,
+      "end": 7478836,
+      "detected": {
+        "start": 6915051,
+        "end": 7478836
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6826851,
+        "end": 7567036,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.9
+          },
+          {
+            "track": 2,
+            "peakDb": -6.1
+          },
+          {
+            "track": 3,
+            "peakDb": -6.3
+          },
+          {
+            "track": 4,
+            "peakDb": -1.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 74.974,
+        "beats": 16,
+        "start": 6931222,
+        "end": 7495899,
+        "confidence": 0.177,
+        "residualMs": 20,
+        "hits": 67
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-15",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 7560434,
+      "end": 7862635,
+      "detected": {
+        "start": 7560434,
+        "end": 7862635
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7472234,
+        "end": 7950835,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.8
+          },
+          {
+            "track": 2,
+            "peakDb": -9.2
+          },
+          {
+            "track": 3,
+            "peakDb": -3.3
+          },
+          {
+            "track": 4,
+            "peakDb": -5.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 140.525,
+        "beats": 16,
+        "start": 7569554,
+        "end": 7870823,
+        "confidence": 0.311,
+        "residualMs": 13.8,
+        "hits": 37
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-16",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 7937235,
+      "end": 8542799,
+      "detected": {
+        "start": 7937235,
+        "end": 8542799
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7849035,
+        "end": 8630999,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.8
+          },
+          {
+            "track": 2,
+            "peakDb": -4.8
+          },
+          {
+            "track": 3,
+            "peakDb": -7.2
+          },
+          {
+            "track": 4,
+            "peakDb": -9.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 184.964,
+        "beats": 42,
+        "start": 7937074,
+        "end": 8537905,
+        "confidence": 0.301,
+        "residualMs": 10.71,
+        "hits": 74
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-17",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 8617305,
+      "end": 9819065,
+      "detected": {
+        "start": 8617305,
+        "end": 9819065
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 8529105,
+        "end": 9907265,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6.9
+          },
+          {
+            "track": 2,
+            "peakDb": -6.7
+          },
+          {
+            "track": 3,
+            "peakDb": -11.5
+          },
+          {
+            "track": 4,
+            "peakDb": -11.5
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 172.907,
+        "beats": 79,
+        "start": 8617095,
+        "end": 9826034,
+        "confidence": 0.226,
+        "residualMs": 11.86,
+        "hits": 223
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2023-258-18",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 9903038,
+      "end": 10507984,
+      "detected": {
+        "start": 9903038,
+        "end": 10507984
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 9814838,
+        "end": 10596184,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.6
+          },
+          {
+            "track": 2,
+            "peakDb": -7.6
+          },
+          {
+            "track": 3,
+            "peakDb": -9.5
+          },
+          {
+            "track": 4,
+            "peakDb": -3.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 138.299,
+        "beats": 32,
+        "start": 9900819,
+        "end": 10513058,
+        "confidence": 0.458,
+        "residualMs": 9.42,
+        "hits": 92
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-19",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 10584725,
+      "end": 11189325,
+      "detected": {
+        "start": 10584725,
+        "end": 11189325
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 10496525,
+        "end": 11277525,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -8.7
+          },
+          {
+            "track": 2,
+            "peakDb": -4.9
+          },
+          {
+            "track": 3,
+            "peakDb": -6.9
+          },
+          {
+            "track": 4,
+            "peakDb": -3.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 61.705,
+        "beats": 14,
+        "start": 10584319,
+        "end": 11184660,
+        "confidence": 0.078,
+        "residualMs": 27.13,
+        "hits": 80
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-20",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 11264493,
+      "end": 11869370,
+      "detected": {
+        "start": 11264493,
+        "end": 11869370
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11176293,
+        "end": 11957570,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -13.9
+          },
+          {
+            "track": 2,
+            "peakDb": -3.2
+          },
+          {
+            "track": 3,
+            "peakDb": -10.5
+          },
+          {
+            "track": 4,
+            "peakDb": -7.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 141.362,
+        "beats": 32,
+        "start": 11282466,
+        "end": 11881441,
+        "confidence": 0.388,
+        "residualMs": 11.32,
+        "hits": 93
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-21",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 12020297,
+      "end": 12322799,
+      "detected": {
+        "start": 12020297,
+        "end": 12322799
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11932097,
+        "end": 12410999,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -17.6
+          },
+          {
+            "track": 2,
+            "peakDb": -4.8
+          },
+          {
+            "track": 3,
+            "peakDb": -5.3
+          },
+          {
+            "track": 4,
+            "peakDb": -6.9
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 71.07,
+        "beats": 8,
+        "start": 12020046,
+        "end": 12317893,
+        "confidence": 0.106,
+        "residualMs": 24.28,
+        "hits": 34
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-22",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 12398356,
+      "end": 12701239,
+      "detected": {
+        "start": 12398356,
+        "end": 12701239
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12310156,
+        "end": 12789439,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.6
+          },
+          {
+            "track": 2,
+            "peakDb": -1.3
+          },
+          {
+            "track": 3,
+            "peakDb": -8.8
+          },
+          {
+            "track": 4,
+            "peakDb": -1.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 70.263,
+        "beats": 8,
+        "start": 12398141,
+        "end": 12699409,
+        "confidence": 0.133,
+        "residualMs": 22.02,
+        "hits": 40
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-23",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 12776012,
+      "end": 13380379,
+      "detected": {
+        "start": 12776012,
+        "end": 13380379
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12687812,
+        "end": 13468579,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -1.6
+          },
+          {
+            "track": 2,
+            "peakDb": -4.7
+          },
+          {
+            "track": 3,
+            "peakDb": -8.6
+          },
+          {
+            "track": 4,
+            "peakDb": -5.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 70,
+        "beats": 16,
+        "start": 12775603,
+        "end": 13380399,
+        "confidence": 0.146,
+        "residualMs": 22.05,
+        "hits": 74
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-24",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 13456473,
+      "end": 13759199,
+      "detected": {
+        "start": 13456473,
+        "end": 13759199
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 13368273,
+        "end": 13847399,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -4.6
+          },
+          {
+            "track": 2,
+            "peakDb": -9.1
+          },
+          {
+            "track": 3,
+            "peakDb": -13.4
+          },
+          {
+            "track": 4,
+            "peakDb": -0.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 139.595,
+        "beats": 16,
+        "start": 13463307,
+        "end": 13766584,
+        "confidence": 0.372,
+        "residualMs": 10.2,
+        "hits": 45
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-25",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 13834108,
+      "end": 14136877,
+      "detected": {
+        "start": 13834108,
+        "end": 14136877
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 13745908,
+        "end": 14225077,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -7.7
+          },
+          {
+            "track": 2,
+            "peakDb": -7.4
+          },
+          {
+            "track": 3,
+            "peakDb": -9.9
+          },
+          {
+            "track": 4,
+            "peakDb": -7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 70.276,
+        "beats": 8,
+        "start": 13834080,
+        "end": 14135291,
+        "confidence": 0.12,
+        "residualMs": 21.74,
+        "hits": 35
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-26",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 14212962,
+      "end": 14515199,
+      "detected": {
+        "start": 14212962,
+        "end": 14515199
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 14124762,
+        "end": 14603399,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -8.9
+          },
+          {
+            "track": 2,
+            "peakDb": -8.3
+          },
+          {
+            "track": 3,
+            "peakDb": -10.8
+          },
+          {
+            "track": 4,
+            "peakDb": -3.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 70.554,
+        "beats": 8,
+        "start": 14212837,
+        "end": 14512862,
+        "confidence": 0.176,
+        "residualMs": 19.12,
+        "hits": 37
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-27",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 14591164,
+      "end": 15195599,
+      "detected": {
+        "start": 14591164,
+        "end": 15195599
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 14502964,
+        "end": 15283799,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3.4
+          },
+          {
+            "track": 2,
+            "peakDb": -11.3
+          },
+          {
+            "track": 3,
+            "peakDb": -0.3
+          },
+          {
+            "track": 4,
+            "peakDb": -8.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 140.318,
+        "beats": 32,
+        "start": 14591363,
+        "end": 15194790,
+        "confidence": 0.37,
+        "residualMs": 11.31,
+        "hits": 79
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2023-258-28",
+      "tape": "2023-258#01",
+      "name": "",
+      "bpm": 140,
+      "start": 15270840,
+      "end": 15573599,
+      "detected": {
+        "start": 15270840,
+        "end": 15573599
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 15182640,
+        "end": 15661799,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3
+          },
+          {
+            "track": 2,
+            "peakDb": -13.7
+          },
+          {
+            "track": 3,
+            "peakDb": -9.1
+          },
+          {
+            "track": 4,
+            "peakDb": null
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 70.111,
+        "beats": 8,
+        "start": 15278290,
+        "end": 15580211,
+        "confidence": 0.091,
+        "residualMs": 26.48,
+        "hits": 22
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2024-020-01",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 0,
+      "end": 301522,
+      "detected": {
+        "start": 0,
+        "end": 301522
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 0,
+        "end": 397740,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -9
+          },
+          {
+            "track": 2,
+            "peakDb": -9.4
+          },
+          {
+            "track": 3,
+            "peakDb": -2.5
+          },
+          {
+            "track": 4,
+            "peakDb": -9.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 70.963,
+        "beats": 8,
+        "start": 98,
+        "end": 298394,
+        "confidence": 0.061,
+        "residualMs": 26.72,
+        "hits": 61
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-02",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 419021,
+      "end": 846971,
+      "detected": {
+        "start": 419021,
+        "end": 846971
+      },
+      "recordedTracks": [
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 322803,
+        "end": 943189,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -15.6
+          },
+          {
+            "track": 2,
+            "peakDb": -13.3
+          },
+          {
+            "track": 3,
+            "peakDb": -12.7
+          },
+          {
+            "track": 4,
+            "peakDb": -2.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 158.561,
+        "beats": 26,
+        "start": 423097,
+        "end": 856973,
+        "confidence": 0.324,
+        "residualMs": 11.89,
+        "hits": 38
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-03",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 914333,
+      "end": 1298563,
+      "detected": {
+        "start": 914333,
+        "end": 1298563
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 818115,
+        "end": 1394781,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3.6
+          },
+          {
+            "track": 2,
+            "peakDb": -5.6
+          },
+          {
+            "track": 3,
+            "peakDb": -6
+          },
+          {
+            "track": 4,
+            "peakDb": -2.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 115.603,
+        "beats": 17,
+        "start": 914112,
+        "end": 1303221,
+        "confidence": 0.308,
+        "residualMs": 12.14,
+        "hits": 69
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2024-020-04",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 1347117,
+      "end": 1731358,
+      "detected": {
+        "start": 1347117,
+        "end": 1731358
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 1250899,
+        "end": 1827576,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3.6
+          },
+          {
+            "track": 2,
+            "peakDb": -5.4
+          },
+          {
+            "track": 3,
+            "peakDb": -5.7
+          },
+          {
+            "track": 4,
+            "peakDb": -5.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 181.052,
+        "beats": 26,
+        "start": 1346783,
+        "end": 1726763,
+        "confidence": 0.335,
+        "residualMs": 11.38,
+        "hits": 71
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2024-020-05",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 1799218,
+      "end": 2222511,
+      "detected": {
+        "start": 1799218,
+        "end": 2222511
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 1703000,
+        "end": 2318729,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3.6
+          },
+          {
+            "track": 2,
+            "peakDb": -8.5
+          },
+          {
+            "track": 3,
+            "peakDb": -7.5
+          },
+          {
+            "track": 4,
+            "peakDb": -3.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 100.385,
+        "beats": 16,
+        "start": 1811446,
+        "end": 2233181,
+        "confidence": 0.199,
+        "residualMs": 17.01,
+        "hits": 21
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-06",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 2327651,
+      "end": 3174644,
+      "detected": {
+        "start": 2327651,
+        "end": 3174644
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 2231433,
+        "end": 3270862,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -5.9
+          },
+          {
+            "track": 2,
+            "peakDb": -16.3
+          },
+          {
+            "track": 3,
+            "peakDb": -14.7
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 99.947,
+        "beats": 32,
+        "start": 2353180,
+        "end": 3200353,
+        "confidence": 0.319,
+        "residualMs": 14.08,
+        "hits": 64
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-07",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 3280262,
+      "end": 3704071,
+      "detected": {
+        "start": 3280262,
+        "end": 3704071
+      },
+      "recordedTracks": [
+        0,
+        1,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3184044,
+        "end": 3800289,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6.4
+          },
+          {
+            "track": 2,
+            "peakDb": -25.6
+          },
+          {
+            "track": 3,
+            "peakDb": -9
+          },
+          {
+            "track": 4,
+            "peakDb": -2.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 175.046,
+        "beats": 28,
+        "start": 3279943,
+        "end": 3703191,
+        "confidence": 0.285,
+        "residualMs": 10.93,
+        "hits": 65
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-08",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 3809821,
+      "end": 4233823,
+      "detected": {
+        "start": 3809821,
+        "end": 4233823
+      },
+      "recordedTracks": [
+        0,
+        1,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 3713603,
+        "end": 4330041,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -12.1
+          },
+          {
+            "track": 2,
+            "peakDb": -14.1
+          },
+          {
+            "track": 3,
+            "peakDb": null
+          },
+          {
+            "track": 4,
+            "peakDb": -1.2
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 187.528,
+        "beats": 30,
+        "start": 3809429,
+        "end": 4232726,
+        "confidence": 0.354,
+        "residualMs": 11.47,
+        "hits": 74
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-09",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 4339808,
+      "end": 4762393,
+      "detected": {
+        "start": 4339808,
+        "end": 4762393
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4243590,
+        "end": 4858611,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -6.9
+          },
+          {
+            "track": 2,
+            "peakDb": -24.6
+          },
+          {
+            "track": 3,
+            "peakDb": -10.9
+          },
+          {
+            "track": 4,
+            "peakDb": -1.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 187.011,
+        "beats": 30,
+        "start": 4339734,
+        "end": 4764201,
+        "confidence": 0.097,
+        "residualMs": 13.13,
+        "hits": 41
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-10",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 4866741,
+      "end": 5291494,
+      "detected": {
+        "start": 4866741,
+        "end": 5291494
+      },
+      "recordedTracks": [
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 4770523,
+        "end": 5387712,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": 0
+          },
+          {
+            "track": 2,
+            "peakDb": null
+          },
+          {
+            "track": 3,
+            "peakDb": -14
+          },
+          {
+            "track": 4,
+            "peakDb": -1.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 174.334,
+        "beats": 28,
+        "start": 4866601,
+        "end": 5291578,
+        "confidence": 0.335,
+        "residualMs": 11.79,
+        "hits": 48
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-11",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 5397401,
+      "end": 6244337,
+      "detected": {
+        "start": 5397401,
+        "end": 6244337
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 5301183,
+        "end": 6340555,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -14.9
+          },
+          {
+            "track": 2,
+            "peakDb": -16.3
+          },
+          {
+            "track": 3,
+            "peakDb": -9
+          },
+          {
+            "track": 4,
+            "peakDb": -12
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 120.523,
+        "beats": 39,
+        "start": 5397263,
+        "end": 6253481,
+        "confidence": 0.237,
+        "residualMs": 16.34,
+        "hits": 74
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-12",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 6350286,
+      "end": 6772977,
+      "detected": {
+        "start": 6350286,
+        "end": 6772977
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6254068,
+        "end": 6869195,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2.6
+          },
+          {
+            "track": 2,
+            "peakDb": -8.9
+          },
+          {
+            "track": 3,
+            "peakDb": -8.3
+          },
+          {
+            "track": 4,
+            "peakDb": -6.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 182.919,
+        "beats": 29,
+        "start": 6352048,
+        "end": 6771545,
+        "confidence": 0.32,
+        "residualMs": 9.63,
+        "hits": 50
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-13",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 6878728,
+      "end": 7302329,
+      "detected": {
+        "start": 6878728,
+        "end": 7302329
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 6782510,
+        "end": 7398547,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -1.2
+          },
+          {
+            "track": 2,
+            "peakDb": -7.3
+          },
+          {
+            "track": 3,
+            "peakDb": -6.1
+          },
+          {
+            "track": 4,
+            "peakDb": -15.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 100.873,
+        "beats": 16,
+        "start": 6878034,
+        "end": 7297730,
+        "confidence": 0.141,
+        "residualMs": 21.12,
+        "hits": 25
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-14",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 7408707,
+      "end": 7832390,
+      "detected": {
+        "start": 7408707,
+        "end": 7832390
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7312489,
+        "end": 7928608,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -9.3
+          },
+          {
+            "track": 2,
+            "peakDb": -6.3
+          },
+          {
+            "track": 3,
+            "peakDb": -7.4
+          },
+          {
+            "track": 4,
+            "peakDb": -2.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 104.067,
+        "beats": 17,
+        "start": 7407393,
+        "end": 7839635,
+        "confidence": 0.223,
+        "residualMs": 14.95,
+        "hits": 23
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-15",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 7938068,
+      "end": 8361570,
+      "detected": {
+        "start": 7938068,
+        "end": 8361570
+      },
+      "recordedTracks": [
+        0,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 7841850,
+        "end": 8457788,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -9.7
+          },
+          {
+            "track": 2,
+            "peakDb": null
+          },
+          {
+            "track": 3,
+            "peakDb": -8.2
+          },
+          {
+            "track": 4,
+            "peakDb": -9.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 108.098,
+        "beats": 17,
+        "start": 7937709,
+        "end": 8353832,
+        "confidence": 0.199,
+        "residualMs": 17.22,
+        "hits": 55
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-16",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 8465766,
+      "end": 8890836,
+      "detected": {
+        "start": 8465766,
+        "end": 8890836
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 8369548,
+        "end": 8987054,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.1
+          },
+          {
+            "track": 2,
+            "peakDb": -11.7
+          },
+          {
+            "track": 3,
+            "peakDb": -2.8
+          },
+          {
+            "track": 4,
+            "peakDb": -3.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 195.524,
+        "beats": 31,
+        "start": 8465680,
+        "end": 8885198,
+        "confidence": 0.342,
+        "residualMs": 10.21,
+        "hits": 47
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-17",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 8995049,
+      "end": 9420296,
+      "detected": {
+        "start": 8995049,
+        "end": 9420296
+      },
+      "recordedTracks": [
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 8898831,
+        "end": 9516514,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": null
+          },
+          {
+            "track": 2,
+            "peakDb": -11.2
+          },
+          {
+            "track": 3,
+            "peakDb": 0
+          },
+          {
+            "track": 4,
+            "peakDb": -6.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 100.404,
+        "beats": 16,
+        "start": 9004586,
+        "end": 9426243,
+        "confidence": 0.18,
+        "residualMs": 19.29,
+        "hits": 35
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-18",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 9525463,
+      "end": 9948968,
+      "detected": {
+        "start": 9525463,
+        "end": 9948968
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 9429245,
+        "end": 10045186,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -8.5
+          },
+          {
+            "track": 2,
+            "peakDb": 0
+          },
+          {
+            "track": 3,
+            "peakDb": -12.8
+          },
+          {
+            "track": 4,
+            "peakDb": -7.1
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 100.283,
+        "beats": 16,
+        "start": 9525082,
+        "end": 9947248,
+        "confidence": 0.154,
+        "residualMs": 18.53,
+        "hits": 48
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-19",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 10054576,
+      "end": 10391563,
+      "detected": {
+        "start": 10054576,
+        "end": 10391563
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 9958358,
+        "end": 10487781,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.7
+          },
+          {
+            "track": 2,
+            "peakDb": -10.3
+          },
+          {
+            "track": 3,
+            "peakDb": -6.2
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 110.166,
+        "beats": 14,
+        "start": 10076021,
+        "end": 10412276,
+        "confidence": 0.271,
+        "residualMs": 16.07,
+        "hits": 25
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-20",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 10439719,
+      "end": 11122264,
+      "detected": {
+        "start": 10439719,
+        "end": 11122264
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 10343501,
+        "end": 11218482,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -8.5
+          },
+          {
+            "track": 2,
+            "peakDb": -9.1
+          },
+          {
+            "track": 3,
+            "peakDb": -3.9
+          },
+          {
+            "track": 4,
+            "peakDb": 0
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 108.444,
+        "beats": 28,
+        "start": 10438500,
+        "end": 11121693,
+        "confidence": 0.218,
+        "residualMs": 15.98,
+        "hits": 23
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-21",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 11209230,
+      "end": 11595231,
+      "detected": {
+        "start": 11209230,
+        "end": 11595231
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11113012,
+        "end": 11691449,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -0.5
+          },
+          {
+            "track": 2,
+            "peakDb": -8.8
+          },
+          {
+            "track": 3,
+            "peakDb": -6.7
+          },
+          {
+            "track": 4,
+            "peakDb": -12.3
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 110.594,
+        "beats": 16,
+        "start": 11220579,
+        "end": 11603385,
+        "confidence": 0.405,
+        "residualMs": 12.03,
+        "hits": 32
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-22",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 11642875,
+      "end": 12027429,
+      "detected": {
+        "start": 11642875,
+        "end": 12027429
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 11546657,
+        "end": 12123647,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -0.5
+          },
+          {
+            "track": 2,
+            "peakDb": -9.4
+          },
+          {
+            "track": 3,
+            "peakDb": -3.1
+          },
+          {
+            "track": 4,
+            "peakDb": -23.9
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 110.279,
+        "beats": 16,
+        "start": 11642463,
+        "end": 12026361,
+        "confidence": 0.166,
+        "residualMs": 16.46,
+        "hits": 33
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2024-020-23",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 12123292,
+      "end": 12893055,
+      "detected": {
+        "start": 12123292,
+        "end": 12893055
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12027074,
+        "end": 12989273,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.7
+          },
+          {
+            "track": 2,
+            "peakDb": -8.8
+          },
+          {
+            "track": 3,
+            "peakDb": -1.2
+          },
+          {
+            "track": 4,
+            "peakDb": -17.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 109.294,
+        "beats": 32,
+        "start": 12123135,
+        "end": 12897854,
+        "confidence": 0.2,
+        "residualMs": 16.85,
+        "hits": 66
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2024-020-24",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 12988851,
+      "end": 13373641,
+      "detected": {
+        "start": 12988851,
+        "end": 13373641
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 12892633,
+        "end": 13469859,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -2.6
+          },
+          {
+            "track": 2,
+            "peakDb": -6.6
+          },
+          {
+            "track": 3,
+            "peakDb": -5.3
+          },
+          {
+            "track": 4,
+            "peakDb": -10.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 4,
+        "bpm": 111.682,
+        "beats": 16,
+        "start": 12988494,
+        "end": 13367571,
+        "confidence": 0.188,
+        "residualMs": 16.68,
+        "hits": 23
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2024-020-25",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 13470033,
+      "end": 13758753,
+      "detected": {
+        "start": 13470033,
+        "end": 13758753
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 13373815,
+        "end": 13854971,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.7
+          },
+          {
+            "track": 2,
+            "peakDb": -7.8
+          },
+          {
+            "track": 3,
+            "peakDb": -12.1
+          },
+          {
+            "track": 4,
+            "peakDb": -1.7
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 60.421,
+        "beats": 7,
+        "start": 13469742,
+        "end": 13776291,
+        "confidence": 0.074,
+        "residualMs": 28.14,
+        "hits": 33
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2024-020-26",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 13855196,
+      "end": 14240685,
+      "detected": {
+        "start": 13855196,
+        "end": 14240685
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 13758978,
+        "end": 14336903,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -3.7
+          },
+          {
+            "track": 2,
+            "peakDb": -8.2
+          },
+          {
+            "track": 3,
+            "peakDb": -8.9
+          },
+          {
+            "track": 4,
+            "peakDb": -1.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 3,
+        "bpm": 109.242,
+        "beats": 16,
+        "start": 13854858,
+        "end": 14242402,
+        "confidence": 0.208,
+        "residualMs": 15.81,
+        "hits": 20
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2024-020-27",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 14336615,
+      "end": 14722180,
+      "detected": {
+        "start": 14336615,
+        "end": 14722180
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 14240397,
+        "end": 14818398,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.4
+          },
+          {
+            "track": 2,
+            "peakDb": -11.8
+          },
+          {
+            "track": 3,
+            "peakDb": -8.7
+          },
+          {
+            "track": 4,
+            "peakDb": -2.6
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 180.268,
+        "beats": 26,
+        "start": 14335817,
+        "end": 14717448,
+        "confidence": 0.376,
+        "residualMs": 9.42,
+        "hits": 28
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-28",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 14817903,
+      "end": 15201728,
+      "detected": {
+        "start": 14817903,
+        "end": 15201728
+      },
+      "recordedTracks": [
+        0,
+        1,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 14721685,
+        "end": 15297946,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -13.6
+          },
+          {
+            "track": 2,
+            "peakDb": -6.2
+          },
+          {
+            "track": 3,
+            "peakDb": null
+          },
+          {
+            "track": 4,
+            "peakDb": -0.4
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 2,
+        "bpm": 108.995,
+        "beats": 16,
+        "start": 14817522,
+        "end": 15205943,
+        "confidence": 0.206,
+        "residualMs": 15.73,
+        "hits": 19
+      },
+      "timing": "free"
+    },
+    {
+      "id": "2024-020-29",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 15298694,
+      "end": 15683424,
+      "detected": {
+        "start": 15298694,
+        "end": 15683424
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 15202476,
+        "end": 15779642,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -8
+          },
+          {
+            "track": 2,
+            "peakDb": 0
+          },
+          {
+            "track": 3,
+            "peakDb": -9.9
+          },
+          {
+            "track": 4,
+            "peakDb": -5.9
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 110.324,
+        "beats": 16,
+        "start": 15320418,
+        "end": 15704162,
+        "confidence": 0.37,
+        "residualMs": 11.47,
+        "hits": 23
+      },
+      "timing": "bars"
+    },
+    {
+      "id": "2024-020-30",
+      "tape": "2024-020#01",
+      "name": "",
+      "bpm": 110,
+      "start": 15780187,
+      "end": 15875983,
+      "detected": {
+        "start": 15780187,
+        "end": 15875983
+      },
+      "recordedTracks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unchecked",
+      "notes": "",
+      "stem": {
+        "start": 15683969,
+        "end": 15876000,
+        "tracks": [
+          {
+            "track": 1,
+            "peakDb": -10.2
+          },
+          {
+            "track": 2,
+            "peakDb": -7
+          },
+          {
+            "track": 3,
+            "peakDb": -0.2
+          },
+          {
+            "track": 4,
+            "peakDb": -6.8
+          }
+        ]
+      },
+      "drumFit": {
+        "track": 1,
+        "bpm": 86.191,
+        "beats": 3,
+        "start": 15779783,
+        "end": 15871881,
+        "confidence": 0.79,
+        "residualMs": 5.36,
+        "hits": 12
+      },
+      "timing": "bars"
+    }
+  ]
+}

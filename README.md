@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OP-1 Loops
 
-## Getting Started
+Four-track loops cut from OP-1 field tape backups, played sample-accurately with the Web Audio API.
+Switch tracks on and off (now or on the next loop), watch the mix and spectrum, and move IN/OUT.
+Press `?` in the app for the controls.
 
-First, run the development server:
+## Run
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    export PATH="$HOME/.local/node/bin:$PATH"
+    npm run dev            # http://localhost:3000 (plays the WAV stems, saves edits)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Data flow
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. `npm run detect` reads every tape's `tape.json` (clip start/stop positions) and writes candidate
+   loops to `data/loops.json`. Clips starting together on 2+ tracks make one loop. Re-running it
+   only adds new ids, so names and edits are kept.
+2. `npm run extract` cuts 4 padded 16-bit WAV stems per loop into `public/audio/<id>/`
+   (1 bar or 2 s of padding each side, so points can move without re-cutting). `--all` re-cuts all.
+3. `npm run tapes` writes `data/tapes.json`: when each tape was started (from its `YYYY-DDD`
+   name) and last saved, for the sidebar.
+4. `.venv/bin/python scripts/drumfit.py --apply` finds each loop's drum track and, where a steady
+   drum grid fits, moves untouched loops so IN is on a hit and OUT a whole number of beats later.
+   Sets `timing` to `bars` / `drums` / `free`; the clip points are kept as `clipDetected`.
+5. In the app, edits save to `data/loops.json` (dev, or `OP1_EDIT=1`). Moving a point past the
+   padding makes the server re-cut that loop's stems. In a read-only deployment, edits stay
+   in the browser and can be exported as JSON.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All times are tape-absolute samples at 44.1 kHz, matching the OP-1's `tape.json`.
+Source tapes default to `~/Music/OP-1 backups/2026-11-20/tapes`; override with `OP1_TAPES_DIR`.
 
-## Learn More
+## GitHub Pages
 
-To learn more about Next.js, take a look at the following resources:
+The site is a static export (`STATIC=1`), served from the `gh-pages` branch. It plays Opus copies of the stems from `public/opus/` (~185 MB, committed)
+instead of the WAVs, and has no save API: edits stay in the visitor's browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+After cutting or re-cutting stems, re-encode and commit them:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    npm run encode         # public/audio/*.wav -> public/opus/*.opus (needs the .venv)
 
-## Deploy on Vercel
+Build it and publish it:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    npm run deploy    # BASE_PATH=/op1-loops build -> out/, force-pushed to gh-pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The Python scripts use a project venv: `python3 -m venv .venv && .venv/bin/pip install
+numpy==1.26.4 scipy==1.13.1 soundfile==0.13.1`.

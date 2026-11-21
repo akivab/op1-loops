@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# cut stems are generated from the tape backup (npm run extract)
+/public/audio/
+/.venv/

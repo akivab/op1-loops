@@ -5,21 +5,29 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+    "build:pages": "STATIC=1 next build && rm -rf out/audio && touch out/.nojekyll",
+    "encode": ".venv/bin/python scripts/encode_web.py",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "detect": "node scripts/detect.mjs",
+    "extract": "node scripts/extract.mjs",
+    "tapes": "node scripts/tapes.mjs",
+    "deploy": "sh scripts/deploy-pages.sh"
   },
   "dependencies": {
+    "next": "15.5.29",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.29"
+    "three": "^0.170.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.170.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.29",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }
