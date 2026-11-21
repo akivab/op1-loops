@@ -30,16 +30,17 @@ Source tapes default to `~/Music/OP-1 backups/2026-11-20/tapes`; override with `
 
 ## GitHub Pages
 
-The site is a static export (`STATIC=1`), served from the `gh-pages` branch. It plays Opus copies of the stems from `public/opus/` (~185 MB, committed)
+The site is a static export (`STATIC=1`), published by `.github/workflows/pages.yml` on every
+push to `main`. It plays Opus copies of the stems from `public/opus/` (~185 MB, committed)
 instead of the WAVs, and has no save API: edits stay in the visitor's browser.
 
 After cutting or re-cutting stems, re-encode and commit them:
 
     npm run encode         # public/audio/*.wav -> public/opus/*.opus (needs the .venv)
 
-Build it and publish it:
+Build the site locally the same way the Action does:
 
-    npm run deploy    # BASE_PATH=/op1-loops build -> out/, force-pushed to gh-pages
+    BASE_PATH=/op1-loops npm run build:pages    # -> out/
 
 The Python scripts use a project venv: `python3 -m venv .venv && .venv/bin/pip install
 numpy==1.26.4 scipy==1.13.1 soundfile==0.13.1`.

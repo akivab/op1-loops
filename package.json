@@ -11,8 +11,7 @@
     "lint": "eslint",
     "detect": "node scripts/detect.mjs",
     "extract": "node scripts/extract.mjs",
-    "tapes": "node scripts/tapes.mjs",
-    "deploy": "sh scripts/deploy-pages.sh"
+    "tapes": "node scripts/tapes.mjs"
   },
   "dependencies": {
     "next": "15.5.29",
