@@ -16,6 +16,32 @@ const START_FADE = 0.008;
 const STOP_FADE = 0.015;
 const CURVE_N = 64;
 
+type AudioSessionNav = Navigator & { audioSession?: { type: string } };
+
+/** A short silent WAV, played through an <audio> element to unlock iOS audio. */
+function silentWav(): string {
+  const n = 2205; // 50 ms at 44.1 kHz, 8-bit mono
+  const b = new Uint8Array(44 + n);
+  const v = new DataView(b.buffer);
+  const str = (o: number, t: string) => [...t].forEach((c, i) => (b[o + i] = c.charCodeAt(0)));
+  str(0, "RIFF");
+  v.setUint32(4, 36 + n, true);
+  str(8, "WAVEfmt ");
+  v.setUint32(16, 16, true);
+  v.setUint16(20, 1, true);
+  v.setUint16(22, 1, true);
+  v.setUint32(24, 44100, true);
+  v.setUint32(28, 44100, true);
+  v.setUint16(32, 1, true);
+  v.setUint16(34, 8, true);
+  str(36, "data");
+  v.setUint32(40, n, true);
+  b.fill(128, 44);
+  let bin = "";
+  b.forEach((x) => (bin += String.fromCharCode(x)));
+  return `data:audio/wav;base64,${btoa(bin)}`;
+}
+
 const fadeInCurve = Float32Array.from({ length: CURVE_N }, (_, i) => Math.sin(((i / (CURVE_N - 1)) * Math.PI) / 2));
 const fadeOutCurve = Float32Array.from({ length: CURVE_N }, (_, i) => Math.cos(((i / (CURVE_N - 1)) * Math.PI) / 2));
 
@@ -43,6 +69,9 @@ export class LoopEngine {
   private fade = 0.02;
   private session: Session | null = null;
   playing = false;
+  /** For the ?debug=1 readout: how the last load went. */
+  lastLoad = "not loaded";
+  private silent: HTMLAudioElement | null = null;
 
   /** Taps the final output (after crossfades, mutes and fades) for metering. */
   readonly analyser: AnalyserNode;
@@ -52,8 +81,12 @@ export class LoopEngine {
   constructor() {
     // iOS mutes Web Audio under the silent switch unless the page says it's
     // media playback (Safari 17+; other browsers don't have audioSession).
-    const session = (navigator as Navigator & { audioSession?: { type: string } }).audioSession;
-    if (session) session.type = "playback";
+    const session = (navigator as AudioSessionNav).audioSession;
+    if (session) {
+      try {
+        session.type = "playback";
+      } catch {}
+    }
     this.ctx = new AudioContext({ latencyHint: "interactive" });
     const out = this.ctx.createGain();
     out.connect(this.ctx.destination);
@@ -72,13 +105,21 @@ export class LoopEngine {
   }
 
   async load(urls: string[], signal?: AbortSignal) {
-    const buffers = await Promise.all(
-      urls.map(async (u) => {
-        const res = await fetch(u, { signal });
-        if (!res.ok) throw new Error(`${u}: ${res.status}`);
-        return this.ctx.decodeAudioData(await res.arrayBuffer());
-      }),
-    );
+    this.lastLoad = "loading";
+    let buffers: AudioBuffer[];
+    try {
+      buffers = await Promise.all(
+        urls.map(async (u) => {
+          const res = await fetch(u, { signal });
+          if (!res.ok) throw new Error(`${u}: ${res.status}`);
+          return this.ctx.decodeAudioData(await res.arrayBuffer());
+        }),
+      );
+    } catch (err) {
+      if (!signal?.aborted) this.lastLoad = `failed: ${(err as Error).name} ${(err as Error).message}`;
+      throw err;
+    }
+    this.lastLoad = `ok: ${buffers.length} × ${buffers[0]?.length ?? 0} samples @ ${buffers[0]?.sampleRate ?? 0} Hz`;
     this.stop();
     this.buffers = buffers;
   }
@@ -161,7 +202,14 @@ export class LoopEngine {
 
   /** Start every track at `from` stem-seconds (default: IN), fading in over `fadeIn`. */
   async play(from = this.loopStart, fadeIn = START_FADE) {
-    if (this.ctx.state === "suspended") await this.ctx.resume();
+    this.unlock();
+    // "suspended" before the first tap, "interrupted" on iOS after leaving the
+    // page or a call: either way, resume inside this tap.
+    if (this.ctx.state !== "running") {
+      try {
+        await this.ctx.resume();
+      } catch {}
+    }
     this.stop();
     if (!this.buffers.length) return;
     const when = this.ctx.currentTime + 0.03;
@@ -268,6 +316,22 @@ export class LoopEngine {
     for (const p of s.passes) if (p.t0 <= now) cur = p;
     if (!cur) return this.loopStart;
     return cur.start + Math.min(now - cur.t0, cur.len);
+  }
+
+  /**
+   * Must run inside a tap. Where there's no audioSession (older iOS, in-app
+   * browsers), playing a silent <audio> element moves the page into playback
+   * mode, so the silent switch doesn't mute Web Audio.
+   */
+  unlock() {
+    if ((navigator as AudioSessionNav).audioSession || typeof Audio === "undefined") return;
+    if (!this.silent) {
+      this.silent = new Audio(silentWav());
+      this.silent.setAttribute("playsinline", "");
+      this.silent.preload = "auto";
+    }
+    this.silent.currentTime = 0;
+    void this.silent.play().catch(() => {});
   }
 
   close() {

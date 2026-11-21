@@ -9,6 +9,7 @@ import TapeStrip from "./TapeStrip";
 import Spectrum from "./Spectrum";
 import OutputMeter from "./OutputMeter";
 import TapeReels3D from "./TapeReels3D";
+import DebugReadout from "./DebugReadout";
 
 /**
  * The mix with each non-null target applied. Solo is folded into plain mutes
@@ -32,6 +33,10 @@ export default function LoopApp({
 }) {
   const loops = initial;
   const [showKeys, setShowKeys] = useState(false);
+  // phones: the loop list is a bottom sheet
+  const [libOpen, setLibOpen] = useState(false);
+  const [debug, setDebug] = useState(false);
+  useEffect(() => setDebug(new URLSearchParams(window.location.search).has("debug")), []);
   // start on the first loop of the first tape
   const [selId, setSelId] = useState(
     () => [...initial].filter((l) => l.tape === tapes[0]?.tape).sort((a, b) => a.start - b.start)[0]?.id ?? initial[0]?.id,
@@ -76,6 +81,38 @@ export default function LoopApp({
     setEngine(e);
     return () => e.close();
   }, []);
+
+  // iOS suspends or "interrupts" audio when you leave the page (or a call comes
+  // in). If that happens mid-play, stop cleanly so the next tap starts fresh;
+  // on return, try to resume, and rebuild the engine if the context was closed
+  // (e.g. a back/forward cache restore).
+  useEffect(() => {
+    if (!engine) return;
+    const onState = () => {
+      if (engine.ctx.state !== "running" && engine.playing) {
+        engine.stop();
+        setPlaying(false);
+      }
+    };
+    const wake = () => {
+      if (document.visibilityState !== "visible") return;
+      if (engine.ctx.state === "closed") {
+        setPlaying(false);
+        setEngine(new LoopEngine());
+        return;
+      }
+      if (engine.ctx.state !== "running") void engine.ctx.resume().catch(() => {});
+      onState();
+    };
+    engine.ctx.addEventListener("statechange", onState);
+    document.addEventListener("visibilitychange", wake);
+    window.addEventListener("pageshow", wake);
+    return () => {
+      engine.ctx.removeEventListener("statechange", onState);
+      document.removeEventListener("visibilitychange", wake);
+      window.removeEventListener("pageshow", wake);
+    };
+  }, [engine]);
 
   // Load the 4 stems whenever the loop or its cut changes.
   const stemKey = loop ? `${loop.id}:${loop.stem?.start}:${loop.stem?.end}` : "";
@@ -191,6 +228,7 @@ export default function LoopApp({
     (id: string | undefined) => {
       if (!id) return;
       setSelId(id);
+      setLibOpen(false);
       document.getElementById(`item-${id}`)?.scrollIntoView({ block: "nearest" });
     },
     [],
@@ -207,7 +245,10 @@ export default function LoopApp({
         if (playing) stop();
         else void play();
       } else if (e.key === "?") setShowKeys((v) => !v);
-      else if (e.key === "Escape") setShowKeys(false);
+      else if (e.key === "Escape") {
+        setShowKeys(false);
+        setLibOpen(false);
+      }
       else if (/^Digit[1-4]$/.test(e.code) && !e.metaKey && !e.ctrlKey && !e.altKey) {
         // 1–4 switch right now; shift+1–4 queue for the next loop.
         e.preventDefault();
@@ -224,6 +265,10 @@ export default function LoopApp({
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [visible, selId, playing, play, stop, select, toggleTrack]);
+
+  useEffect(() => {
+    if (libOpen) document.getElementById(`item-${selId}`)?.scrollIntoView({ block: "center" });
+  }, [libOpen, selId]);
 
   const shownTapes = tapeOrder.filter((t) => visible.some((l) => l.tape === t));
   const loopIndex = loop ? loops.filter((l) => l.tape === loop.tape).sort((a, b) => a.start - b.start).findIndex((l) => l.id === loop.id) : -1;
@@ -253,8 +298,10 @@ export default function LoopApp({
   const meter = <OutputMeter engine={engine} mix={mix} />;
 
   return (
-    <div className="app">
-      <aside className="sidebar">
+    <div className={`app${libOpen ? " lib-open" : ""}`}>
+      {libOpen && <div className="sheet-back" onClick={() => setLibOpen(false)} />}
+      <aside className="sidebar" aria-label="Library">
+        <button className="sheet-grab" onClick={() => setLibOpen(false)} aria-label="Close the loop list" />
         <header className="brand">
           <h1>OP-1 Loops</h1>
           <p>
@@ -364,6 +411,40 @@ export default function LoopApp({
           </>
         )}
       </main>
+      {loop && (
+        <nav className="mbar" aria-label="Now playing">
+          <button className="mbar-play" onClick={() => (playing ? stop() : play())} disabled={!buffers.length} aria-label={playing ? "Stop" : "Play"}>
+            <svg viewBox="0 0 24 24" aria-hidden>
+              {playing ? <rect x="7" y="7" width="10" height="10" rx="1.5" /> : <path d="M9 6.5v11a1 1 0 0 0 1.5.86l9-5.5a1 1 0 0 0 0-1.72l-9-5.5A1 1 0 0 0 9 6.5Z" />}
+            </svg>
+          </button>
+          <button className="mbar-lib" onClick={() => setLibOpen(true)} aria-label="Open the loop list" aria-expanded={libOpen}>
+            <span className="mbar-name">{loop.name || loop.id}</span>
+            <span className="mbar-sub">
+              {tapeInfo(loop.tape).title} · loop {loopIndex + 1} of {tapeCount}
+            </span>
+          </button>
+          <button
+            className="mbar-step"
+            onClick={() => select(visible[Math.max(0, visible.findIndex((l) => l.id === selId) - 1)]?.id)}
+            aria-label="Previous loop"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden>
+              <path d="M15 6l-6 6 6 6" />
+            </svg>
+          </button>
+          <button
+            className="mbar-step"
+            onClick={() => select(visible[Math.min(visible.length - 1, visible.findIndex((l) => l.id === selId) + 1)]?.id)}
+            aria-label="Next loop"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden>
+              <path d="M9 6l6 6-6 6" />
+            </svg>
+          </button>
+        </nav>
+      )}
+      {debug && <DebugReadout engine={engine} />}
       {showKeys && (
         <div className="modal-back" onClick={() => setShowKeys(false)}>
           <div className="modal" role="dialog" aria-modal="true" aria-label="About and controls" onClick={(e) => e.stopPropagation()}>
