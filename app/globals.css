@@ -614,6 +614,8 @@ code {
 
 /* play */
 button.play {
+  flex: none;
+  aspect-ratio: 1;
   width: 64px;
   height: 64px;
   padding: 0;
@@ -786,6 +788,8 @@ button.play.playing {
 .reels3d {
   margin-left: auto;
   flex: none;
+  width: 300px;
+  height: 132px;
 }
 .reels3d canvas {
   display: block;
@@ -1033,5 +1037,72 @@ p.hint {
 @keyframes modal-fade {
   from {
     opacity: 0;
+  }
+}
+
+/* phones: controls wrap, the reels get their own full-width row, nothing is
+   wider than the screen, and tap targets are at least ~40px */
+@media (max-width: 760px) {
+  /* one page that scrolls, with the loop list capped near the top */
+  .app {
+    height: auto;
+    min-height: 100dvh;
+    grid-template-rows: auto auto;
+  }
+  .sidebar .list {
+    max-height: 34dvh;
+  }
+  .editor {
+    overflow: visible;
+    min-width: 0;
+  }
+  /* track lanes: no volume sliders (records and M/S switch tracks), bigger M/S */
+  .lane-btns input {
+    display: none;
+  }
+  .lane-btns {
+    gap: 6px;
+  }
+  .lane-btns button {
+    min-width: 36px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .transport {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .transport > button.play {
+    width: 56px;
+    height: 56px;
+  }
+  .vinyls {
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  .vinyl {
+    flex: 0 1 64px;
+    width: auto;
+    height: auto;
+    min-width: 44px;
+    aspect-ratio: 1;
+  }
+  .reels3d,
+  .out-meter + .reels3d {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    aspect-ratio: 300 / 132;
+    margin: 0 auto;
+  }
+  .item {
+    padding: 10px 8px;
+  }
+  .keys-btn {
+    width: 40px;
+    height: 40px;
   }
 }

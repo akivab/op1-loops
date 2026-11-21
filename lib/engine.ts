@@ -50,6 +50,10 @@ export class LoopEngine {
   readonly trackAnalysers: AnalyserNode[] = [];
 
   constructor() {
+    // iOS mutes Web Audio under the silent switch unless the page says it's
+    // media playback (Safari 17+; other browsers don't have audioSession).
+    const session = (navigator as Navigator & { audioSession?: { type: string } }).audioSession;
+    if (session) session.type = "playback";
     this.ctx = new AudioContext({ latencyHint: "interactive" });
     const out = this.ctx.createGain();
     out.connect(this.ctx.destination);

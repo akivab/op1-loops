@@ -11,6 +11,7 @@ import { isSilenced, type Mix } from "./TrackLanes";
 // the head and pile up on the right one. On = track colour, off = grey,
 // queued = pulsing.
 
+// Desktop size; on phones CSS makes it full width, keeping this aspect.
 const W = 300;
 const H = 132;
 const REEL_X = 1.55;
@@ -40,13 +41,29 @@ export default function TapeReels3D({ loop, engine, mix, queued }: Props) {
   useEffect(() => {
     const el = mount.current;
     if (!el) return;
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    let renderer: THREE.WebGLRenderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    } catch {
+      return; // no WebGL: leave the space empty
+    }
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     renderer.setSize(W, H);
     el.appendChild(renderer.domElement);
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(30, W / H, 0.1, 50);
+    // follow the box's size (full width on phones)
+    const resize = () => {
+      const w = el.clientWidth || W;
+      const h = el.clientHeight || H;
+      renderer.setSize(w, h);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    };
+    const ro = new ResizeObserver(resize);
+    ro.observe(el);
+    resize();
     camera.position.set(3.3, 1.9, 5.0);
     camera.lookAt(0.15, -0.3, 0);
     scene.add(new THREE.AmbientLight(0xffffff, 1.4));
@@ -213,6 +230,7 @@ export default function TapeReels3D({ loop, engine, mix, queued }: Props) {
 
     return () => {
       cancelAnimationFrame(raf);
+      ro.disconnect();
       scene.traverse((o) => {
         if (o instanceof THREE.Mesh) o.geometry.dispose();
       });
@@ -223,5 +241,5 @@ export default function TapeReels3D({ loop, engine, mix, queued }: Props) {
     };
   }, []);
 
-  return <div className="reels3d" ref={mount} style={{ width: W, height: H }} aria-hidden />;
+  return <div className="reels3d" ref={mount} aria-hidden />;
 }
