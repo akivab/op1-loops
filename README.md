@@ -6,6 +6,49 @@ Press `?` in the app for the controls.
 
 Live: **https://akivab.github.io/op1-loops/**
 
+## Set it up for your own OP-1 field
+
+It reads OP-1 field tapes: each tape folder holds `track_1.wav` … `track_4.wav` and a
+`tape.json` that lists every clip (where each recording starts and stops). That clip list is
+how loops are found, so you need tapes from an OP-1 field.
+
+1. **Back up your tapes.** Copy the OP-1 field's `tapes` folder to your computer. Archived tapes
+   are named for the day they were started (`2023-044#01` is day 44 of 2023), and `tape 01` is
+   the one still on the device. Keep the files' modification times when you copy (e.g.
+   `cp -Rp`), since the sidebar's "last saved" dates come from each `tape.json`'s mtime.
+2. **Get the code and clear out my loops.** Fork this repo (or copy it into a new one), clone
+   it, then remove my data and audio:
+
+       git rm -r -q data/loops.json data/tapes.json public/opus
+
+3. **Install.** You need Node 20+ and Python 3:
+
+       npm install
+       python3 -m venv .venv && .venv/bin/pip install numpy==1.26.4 scipy==1.13.1 soundfile==0.13.1
+
+4. **Find and cut your loops**, pointing `OP1_TAPES_DIR` at your `tapes` folder:
+
+       export OP1_TAPES_DIR="/path/to/your/tapes"
+       npm run detect                            # data/loops.json: every clip recorded on 2+ tracks at once
+       npm run extract                           # public/audio/: 4 WAV stems per loop
+       npm run tapes                             # data/tapes.json: tape dates for the sidebar
+       .venv/bin/python scripts/drumfit.py --apply   # optional: snap loops to their drum beat
+
+5. **Listen and tidy up.** `npm run dev`, open http://localhost:3000, and name loops and move
+   IN/OUT points; edits save to `data/loops.json`. (Steps 4–5 are explained under
+   [Updating the loops](#updating-the-loops).)
+6. **Make it yours.** The one-line story in the `?` box is in `components/LoopApp.tsx` (search
+   for "Musical ideas"), and the page description is in `app/layout.tsx`.
+7. **Publish.** Encode the stems for the web, commit and push:
+
+       npm run encode
+       git add -A && git commit -m "My OP-1 loops" && git push
+
+   Then on GitHub, go to **Settings → Pages** and set **Source** to **GitHub Actions**. The
+   workflow builds on every push to `main`; the site appears at
+   `https://<your-username>.github.io/<repo-name>/` (the repo name is picked up automatically).
+   A public repo means your recordings are public.
+
 ## Two ways it runs
 
 |          | Local (`npm run dev`)                              | GitHub Pages                                   |
