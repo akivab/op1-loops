@@ -2,28 +2,13 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LoopEngine } from "@/lib/engine";
-import { DEFAULT_FADE_MS, SR, bars, fadeMsOf, fmtDate, fmtMonth, stemUrl, tapeTitle, TIMING_LABEL, type Loop, type LoopPatch, type Tape } from "@/lib/types";
+import { DEFAULT_FADE_MS, SR, bars, fadeMsOf, fmtDate, fmtMonth, stemUrl, tapeTitle, TIMING_LABEL, type Loop, type Tape } from "@/lib/types";
 import TrackLanes, { isSilenced, type Mix } from "./TrackLanes";
 import Vinyls from "./Vinyls";
 import TapeStrip from "./TapeStrip";
 import Spectrum from "./Spectrum";
 import OutputMeter from "./OutputMeter";
 import TapeReels3D from "./TapeReels3D";
-
-const LOCAL_KEY = "op1-loops-edits-v1";
-
-function readLocal(): Record<string, LoopPatch> {
-  try {
-    return JSON.parse(localStorage.getItem(LOCAL_KEY) || "{}");
-  } catch {
-    return {};
-  }
-}
-function writeLocal(v: Record<string, LoopPatch>) {
-  try {
-    localStorage.setItem(LOCAL_KEY, JSON.stringify(v));
-  } catch {}
-}
 
 /**
  * The mix with each non-null target applied. Solo is folded into plain mutes
@@ -41,13 +26,11 @@ function withTargets(mix: Mix, targets: (boolean | null)[]): Mix {
 export default function LoopApp({
   initial,
   tapes,
-  editable,
 }: {
   initial: Loop[];
   tapes: Tape[];
-  editable: boolean;
 }) {
-  const [loops, setLoops] = useState<Loop[]>(initial);
+  const loops = initial;
   const [showKeys, setShowKeys] = useState(false);
   // start on the first loop of the first tape
   const [selId, setSelId] = useState(
@@ -59,14 +42,10 @@ export default function LoopApp({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [playing, setPlaying] = useState(false);
-  const [saveState, setSaveState] = useState<"saved" | "saving" | "error" | "local">(editable ? "saved" : "local");
-  const [toast, setToast] = useState<string | null>(null);
   const [mix, setMix] = useState<Mix>({ mute: [false, false, false, false], solo: [false, false, false, false], vol: [1, 1, 1, 1] });
   // Per track: the on/off state it's queued to take at the next loop, or null.
   const [queued, setQueued] = useState<(boolean | null)[]>([null, null, null, null]);
   const applied = useRef<{ engine: LoopEngine | null; gain: (number | null)[] }>({ engine: null, gain: [null, null, null, null] });
-  const pending = useRef<Record<string, LoopPatch>>({});
-  const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const loop = loops.find((l) => l.id === selId);
 
@@ -91,13 +70,6 @@ export default function LoopApp({
     },
     [tapes],
   );
-
-  // Read-only deployments keep edits in this browser.
-  useEffect(() => {
-    if (editable) return;
-    const local = readLocal();
-    setLoops((ls) => ls.map((l) => (local[l.id] ? { ...l, ...local[l.id] } : l)));
-  }, [editable]);
 
   useEffect(() => {
     const e = new LoopEngine();
@@ -181,50 +153,6 @@ export default function LoopApp({
     [playing, mix],
   );
 
-  const flush = useCallback(async () => {
-    const batch = pending.current;
-    pending.current = {};
-    const ids = Object.keys(batch);
-    if (!ids.length) return;
-    setSaveState("saving");
-    try {
-      for (const id of ids) {
-        const res = await fetch("/api/loops", {
-          method: "PATCH",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({ id, ...batch[id] }),
-        });
-        const body = await res.json();
-        if (!res.ok) throw new Error(body.error || res.statusText);
-        // Server may have re-cut the stems; take its stem but keep any newer local edits.
-        setLoops((ls) => ls.map((l) => (l.id === id ? { ...l, stem: body.loop.stem } : l)));
-      }
-      setSaveState("saved");
-    } catch (err) {
-      setSaveState("error");
-      setToast(`Save failed: ${(err as Error).message}`);
-    }
-  }, []);
-
-  const update = useCallback(
-    (id: string, patch: LoopPatch) => {
-      setLoops((ls) => ls.map((l) => (l.id === id ? { ...l, ...patch } : l)));
-      if (editable) {
-        pending.current[id] = { ...pending.current[id], ...patch };
-        setSaveState("saving");
-        if (saveTimer.current) clearTimeout(saveTimer.current);
-        saveTimer.current = setTimeout(flush, 500);
-      } else {
-        const local = readLocal();
-        local[id] = { ...local[id], ...patch };
-        writeLocal(local);
-      }
-    },
-    [editable, flush],
-  );
-
-  const setPoints = (start: number, end: number) => loop && update(loop.id, { start: Math.round(start), end: Math.round(end) });
-
   const play = useCallback(
     async (from?: number) => {
       if (!engine || !buffers.length) return;
@@ -297,23 +225,6 @@ export default function LoopApp({
     return () => window.removeEventListener("keydown", onKey);
   }, [visible, selId, playing, play, stop, select, toggleTrack]);
 
-  useEffect(() => {
-    if (!toast) return;
-    const t = setTimeout(() => setToast(null), 2500);
-    return () => clearTimeout(t);
-  }, [toast]);
-
-
-
-  const exportEdits = () => {
-    const blob = new Blob([JSON.stringify(readLocal(), null, 2)], { type: "application/json" });
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = "op1-loop-edits.json";
-    a.click();
-    URL.revokeObjectURL(a.href);
-  };
-
   const shownTapes = tapeOrder.filter((t) => visible.some((l) => l.tape === t));
   const loopIndex = loop ? loops.filter((l) => l.tape === loop.tape).sort((a, b) => a.start - b.start).findIndex((l) => l.id === loop.id) : -1;
   const tapeCount = loop ? loops.filter((l) => l.tape === loop.tape).length : 0;
@@ -384,14 +295,6 @@ export default function LoopApp({
             );
           })}
         </nav>
-        {(!editable || saveState === "saving" || saveState === "error") && (
-          <footer className="side-foot">
-            {!editable && <button onClick={exportEdits}>Export edits (.json)</button>}
-            {(saveState === "saving" || saveState === "error") && (
-              <span className={`save ${saveState}`}>{saveState === "saving" ? "Saving…" : "Not saved"}</span>
-            )}
-          </footer>
-        )}
       </aside>
 
       <main className="editor">
@@ -404,14 +307,7 @@ export default function LoopApp({
         ) : (
           <>
             <div className="title-row">
-              <input
-                className="name"
-                value={loop.name}
-                placeholder={loop.id}
-                aria-label="Loop name"
-                title="Rename this loop (clear it to go back to the id)"
-                onChange={(e) => update(loop.id, { name: e.target.value })}
-              />
+              <h1 className="name">{loop.name || loop.id}</h1>
               <button
                 className={`keys-btn${showKeys ? " on" : ""}`}
                 onClick={() => setShowKeys((v) => !v)}
@@ -453,7 +349,6 @@ export default function LoopApp({
               buffers={buffers}
               mix={mix}
               onMix={setMix}
-              onPoints={setPoints}
               onSeek={(sec) => void play(sec)}
             />
 
@@ -491,8 +386,6 @@ export default function LoopApp({
               <dd>Previous / next loop</dd>
               <dt>click a track</dt>
               <dd>Play from there</dd>
-              <dt>drag IN / OUT</dt>
-              <dd>Move the loop points</dd>
               <dt>M · S</dt>
               <dd>Mute · solo a track</dd>
               <dt><kbd>?</kbd> · <kbd>Esc</kbd></dt>
@@ -501,7 +394,6 @@ export default function LoopApp({
           </div>
         </div>
       )}
-      {toast && <div className="toast">{toast}</div>}
     </div>
   );
 }

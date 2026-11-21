@@ -1,5 +1,4 @@
 import LoopApp from "@/components/LoopApp";
-import { editable } from "@/lib/editable";
 import { readLoops } from "@/lib/stems.mjs";
 import fs from "node:fs";
 import path from "node:path";
@@ -11,5 +10,5 @@ export default function Page() {
   try {
     tapes = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "tapes.json"), "utf8")).tapes;
   } catch {}
-  return <LoopApp initial={db.loops} tapes={tapes} editable={editable()} />;
+  return <LoopApp initial={db.loops} tapes={tapes} />;
 }

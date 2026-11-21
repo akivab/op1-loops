@@ -16,20 +16,17 @@ interface Props {
   buffers: AudioBuffer[];
   mix: Mix;
   onMix: (m: Mix) => void;
-  onPoints: (start: number, end: number) => void;
   onSeek: (stemSec: number) => void;
 }
 
 
 const LANE_H = 64;
-const GRAB_PX = 8;
 
-export default function TrackLanes({ loop, engine, buffers, mix, onMix, onPoints, onSeek }: Props) {
+export default function TrackLanes({ loop, engine, buffers, mix, onMix, onSeek }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const headRef = useRef<HTMLDivElement>(null);
   const headLabel = useRef<HTMLSpanElement>(null);
   const [width, setWidth] = useState(800);
-  const drag = useRef<null | "start" | "end">(null);
   const stem = loop.stem!;
   const total = stem.end - stem.start;
 
@@ -71,26 +68,7 @@ export default function TrackLanes({ loop, engine, buffers, mix, onMix, onPoints
     return () => cancelAnimationFrame(raf);
   }, [engine, total, width, inSec]);
 
-  const onPointerDown = (e: React.PointerEvent) => {
-    const x = e.clientX - wrapRef.current!.getBoundingClientRect().left;
-    if (Math.abs(x - xOf(loop.start)) <= GRAB_PX) drag.current = "start";
-    else if (Math.abs(x - xOf(loop.end)) <= GRAB_PX) drag.current = "end";
-    else {
-      onSeek((sampleAt(e.clientX) - stem.start) / SR);
-      return;
-    }
-    (e.target as Element).setPointerCapture(e.pointerId);
-  };
-  const onPointerMove = (e: React.PointerEvent) => {
-    const x = e.clientX - wrapRef.current!.getBoundingClientRect().left;
-    const near = Math.abs(x - xOf(loop.start)) <= GRAB_PX || Math.abs(x - xOf(loop.end)) <= GRAB_PX;
-    wrapRef.current!.style.cursor = drag.current || near ? "ew-resize" : "pointer";
-    if (!drag.current) return;
-    const s = sampleAt(e.clientX);
-    if (drag.current === "start") onPoints(Math.min(s, loop.end - 441), loop.end);
-    else onPoints(loop.start, Math.max(s, loop.start + 441));
-  };
-  const onPointerUp = () => (drag.current = null);
+  const onPointerDown = (e: React.PointerEvent) => onSeek((sampleAt(e.clientX) - stem.start) / SR);
 
   const toggle = (key: "mute" | "solo", i: number) =>
     onMix({ ...mix, [key]: mix[key].map((v, j) => (j === i ? !v : v)) });
@@ -140,9 +118,6 @@ export default function TrackLanes({ loop, engine, buffers, mix, onMix, onPoints
         className="lane-wave"
         ref={wrapRef}
         onPointerDown={onPointerDown}
-        onPointerMove={onPointerMove}
-        onPointerUp={onPointerUp}
-        onPointerCancel={onPointerUp}
       >
         {[0, 1, 2, 3].map((i) => (
           <Wave key={i} buf={buffers[i]} width={width} track={i} dim={isSilenced(mix, i)} />

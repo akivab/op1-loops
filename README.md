@@ -1,10 +1,23 @@
 # OP-1 Loops
 
-Four-track loops cut from my OP-1 field tapes, played sample-accurately with the Web Audio API.
-Switch tracks on and off (now or on the next loop), watch the mix and spectrum, and move IN/OUT.
-Press `?` in the app for the controls.
+**▶ Listen: [akivab.github.io/op1-loops](https://akivab.github.io/op1-loops/)**
 
-Live: **https://akivab.github.io/op1-loops/**
+Four-track loops cut from my OP-1 field tapes, played sample-accurately in the browser with the
+Web Audio API. Switch tracks on and off (now or on the next loop) and watch the mix and
+spectrum. Press `?` on the page for the controls.
+
+[![The player: loop list, records for the four tracks, the track lanes, mix and spectrum](docs/screenshot.png)](https://akivab.github.io/op1-loops/)
+
+## How it works
+
+- **Your Mac** turns tape backups into loops. Scripts read each tape's clip list, cut four WAV
+  stems per loop into `public/audio/` (~1.9 GB, not in git), and encode web copies as Opus
+  into `public/opus/` (~185 MB, in git). The loop list lives in `data/loops.json`.
+- **GitHub Pages** serves a static build of whatever is committed. Every push to `main` runs
+  the workflow in `.github/workflows/pages.yml`, which builds the site and publishes it.
+
+The page is a player only: there is no editing on it. Loop points and names are set in
+`data/loops.json`.
 
 ## Set it up for your own OP-1 field
 
@@ -29,14 +42,13 @@ how loops are found, so you need tapes from an OP-1 field.
 4. **Find and cut your loops**, pointing `OP1_TAPES_DIR` at your `tapes` folder:
 
        export OP1_TAPES_DIR="/path/to/your/tapes"
-       npm run detect                            # data/loops.json: every clip recorded on 2+ tracks at once
-       npm run extract                           # public/audio/: 4 WAV stems per loop
-       npm run tapes                             # data/tapes.json: tape dates for the sidebar
+       npm run detect                                # data/loops.json: clips recorded on 2+ tracks at once
+       npm run extract                               # public/audio/: 4 WAV stems per loop
+       npm run tapes                                 # data/tapes.json: tape dates for the sidebar
        .venv/bin/python scripts/drumfit.py --apply   # optional: snap loops to their drum beat
 
-5. **Listen and tidy up.** `npm run dev`, open http://localhost:3000, and name loops and move
-   IN/OUT points; edits save to `data/loops.json`. (Steps 4–5 are explained under
-   [Updating the loops](#updating-the-loops).)
+5. **Listen.** `npm run dev` and open http://localhost:3000. To name a loop or change its
+   points, edit it in `data/loops.json` (see [The loop list](#the-loop-list)).
 6. **Make it yours.** The one-line story in the `?` box is in `components/LoopApp.tsx` (search
    for "Musical ideas"), and the page description is in `app/layout.tsx`.
 7. **Publish.** Encode the stems for the web, commit and push:
@@ -44,66 +56,44 @@ how loops are found, so you need tapes from an OP-1 field.
        npm run encode
        git add -A && git commit -m "My OP-1 loops" && git push
 
-   Then on GitHub, go to **Settings → Pages** and set **Source** to **GitHub Actions**. The
-   workflow builds on every push to `main`; the site appears at
-   `https://<your-username>.github.io/<repo-name>/` (the repo name is picked up automatically).
-   A public repo means your recordings are public.
+   Then on GitHub, go to **Settings → Pages** and set **Source** to **GitHub Actions**. The site
+   appears at `https://<your-username>.github.io/<repo-name>/` about a minute later; the repo
+   name is picked up automatically. A public repo means your recordings are public.
 
-## Two ways it runs
-
-|          | Local (`npm run dev`)                              | GitHub Pages                                   |
-| -------- | -------------------------------------------------- | ---------------------------------------------- |
-| Audio    | WAV stems in `public/audio/` (~1.9 GB, not in git) | Opus stems in `public/opus/` (~185 MB, in git) |
-| Edits    | saved to `data/loops.json`                         | kept in the visitor's browser; "Export edits (.json)" downloads them |
-| Built by | the Next.js dev server                             | a GitHub Action, as a static export            |
-
-You cut and edit loops locally. The Pages site is a read-only copy of whatever is committed.
-
-## Run locally
-
-    export PATH="$HOME/.local/node/bin:$PATH"
-    npm install
-    npm run dev            # http://localhost:3000
-
-The Python scripts use a project venv:
-
-    python3 -m venv .venv && .venv/bin/pip install numpy==1.26.4 scipy==1.13.1 soundfile==0.13.1
-
-## Updating the loops
+## The scripts
 
 Source tapes default to `~/Music/OP-1 backups/2026-11-20/tapes`; override with `OP1_TAPES_DIR`.
 All times are tape-absolute samples at 44.1 kHz, matching the OP-1's `tape.json`.
 
-1. `npm run detect` reads every tape's `tape.json` and writes candidate loops to
-   `data/loops.json`. Clips starting together on 2+ tracks make one loop. Re-running only adds
-   new ids, so names and edits are kept.
-2. `npm run extract` cuts 4 padded WAV stems per loop into `public/audio/<id>/` (1 bar or 2 s of
-   padding each side, so points can move without re-cutting). `--all` re-cuts everything.
-3. `npm run tapes` writes `data/tapes.json`: when each tape was started (from its `YYYY-DDD`
-   name) and last saved, for the sidebar.
-4. `.venv/bin/python scripts/drumfit.py --apply` finds each loop's drum track and, where a steady
-   grid fits, moves untouched loops so IN is on a hit and OUT a whole number of beats later.
-   Sets `timing` to `bars` / `drums` / `free` and keeps the clip points as `clipDetected`.
-5. Edit in the app (`npm run dev`, or a production server with `OP1_EDIT=1`). Moving a point past
-   the padding makes the server re-cut that loop's stems.
+| Command | What it does |
+| --- | --- |
+| `npm run detect` | Reads every `tape.json` and adds new loops to `data/loops.json`. Clips starting together on 2+ tracks make one loop. Existing loops are left alone. |
+| `npm run extract` | Cuts 4 WAV stems per loop into `public/audio/<id>/`, padded by a bar (at least 2 s) each side. Skips loops whose stems already cover their points; `--all` re-cuts everything. |
+| `npm run tapes` | Writes `data/tapes.json`: when each tape was started (from its name) and last saved. |
+| `.venv/bin/python scripts/drumfit.py --apply` | Finds each loop's drum track and, where a steady grid fits, moves untouched loops so IN is on a hit and OUT a whole number of beats later. Sets `timing` to `bars`, `drums` or `free`. |
+| `npm run encode` | Encodes the WAV stems to Opus in `public/opus/`, skipping ones already up to date. |
+| `npm run dev` | The player at http://localhost:3000, playing the WAV stems. |
 
-## Publishing to GitHub Pages
+## The loop list
 
-After any change to loops or stems:
+Each loop in `data/loops.json` has an `id`, its `tape`, a `name` (empty shows the id), `bpm`,
+and `start` / `end`: tape sample positions at 44.1 kHz. `detected` keeps the original clip points
+(and `clipDetected` them on loops drumfit moved), and `stem` records what was cut. To change a loop, edit `name`, `start`
+or `end`, run `npm run extract` (it re-cuts only loops that moved past their padding), then
+`npm run encode`.
 
-    npm run encode         # public/audio/*.wav -> public/opus/*.opus (skips ones already up to date)
-    git add data public/opus && git commit -m "..." && git push
+## Publishing details
 
-Every push to `main` runs `.github/workflows/pages.yml`, which:
+On each push to `main`, the workflow:
 
-1. runs `npm ci`, then `npm run build:pages` with `BASE_PATH=/op1-loops` (the repo name, which
-   is the site's path on github.io);
+1. runs `npm ci`, then `npm run build:pages` with `BASE_PATH=/<repo-name>` (the site's path on
+   github.io);
 2. `build:pages` sets `STATIC=1`, so `next.config.ts` makes a static export into `out/` that
-   loads stems from `opus/` and leaves out the save API (`app/api/loops/route.dev.ts`);
-3. uploads `out/` and deploys it. The site updates about a minute after the push.
+   plays the Opus stems instead of the WAVs;
+3. uploads `out/` and deploys it.
 
-Watch a deploy with `gh run watch -R akivab/op1-loops`. To rebuild without pushing, run the
-workflow from the repo's Actions tab.
+Watch a deploy with `gh run watch`. To rebuild without pushing, run the workflow from the
+repo's Actions tab.
 
 **Why Opus:** the WAVs are too big for git. Opus only runs at 48 kHz, so `encode` resamples
 first and the browser resamples back when it decodes. All four tracks of a loop come out the
@@ -115,8 +105,5 @@ same length, so they stay sample-locked.
     mkdir -p /tmp/site && ln -sfn "$PWD/out" /tmp/site/op1-loops
     python3 -m http.server 8089 -d /tmp/site     # http://127.0.0.1:8089/op1-loops/
 
-**Bringing browser edits back:** "Export edits (.json)" on the live site downloads the loops
-that were changed. Merge them into `data/loops.json` locally, then encode and push as above.
-
-**Pushing changes to the workflow file** needs a GitHub login with the `workflow` scope
+**Changing the workflow file** needs a GitHub login with the `workflow` scope
 (`gh auth refresh -s workflow`, then `gh auth setup-git` so `git push` uses it).

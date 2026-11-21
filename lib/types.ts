@@ -32,7 +32,6 @@ export interface LoopDb {
   loops: Loop[];
 }
 
-export type LoopPatch = Partial<Pick<Loop, "name" | "start" | "end" | "status" | "notes" | "fadeMs">>;
 
 export const DEFAULT_FADE_MS = 20;
 export const FADE_CHOICES_MS = [0, 5, 10, 20, 40, 80];
