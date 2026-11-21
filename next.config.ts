@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
     NEXT_PUBLIC_AUDIO: isStatic ? "opus" : "wav",
+    SITE_URL: process.env.SITE_URL ?? "",
   },
 };
 

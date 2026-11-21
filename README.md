@@ -73,6 +73,7 @@ All times are tape-absolute samples at 44.1 kHz, matching the OP-1's `tape.json`
 | `.venv/bin/python scripts/drumfit.py --apply` | Finds each loop's drum track and, where a steady grid fits, moves untouched loops so IN is on a hit and OUT a whole number of beats later. Sets `timing` to `bars`, `drums` or `free`. |
 | `npm run encode` | Encodes the WAV stems to Opus in `public/opus/`, skipping ones already up to date. |
 | `npm run dev` | The player at http://localhost:3000, playing the WAV stems. |
+| `npm run card` | With the dev server running, captures the 3D reels mid-playback into `public/og.png`, the 1200×630 link-preview card, with the title and description baked in (X doesn't show a card's text). Bump `?v=` in `app/layout.tsx` after changing it. |
 
 ## The loop list
 

@@ -11,7 +11,8 @@
     "lint": "eslint",
     "detect": "node scripts/detect.mjs",
     "extract": "node scripts/extract.mjs",
-    "tapes": "node scripts/tapes.mjs"
+    "tapes": "node scripts/tapes.mjs",
+    "card": "node scripts/share-card.mjs"
   },
   "dependencies": {
     "next": "15.5.29",
@@ -27,6 +28,7 @@
     "@types/three": "^0.170.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.29",
+    "playwright-core": "^1.49.1",
     "typescript": "^5"
   }
 }
