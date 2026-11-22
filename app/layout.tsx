@@ -5,9 +5,9 @@ import "./globals.css";
 // absolute, which link previews need; the Pages workflow sets it.
 const site = process.env.SITE_URL?.replace(/\/$/, "");
 const title = "OP-1 Loops";
-const description = "168 four-track loops from my OP-1 field. Play them in your browser.";
+const description = "Loops from my OP-1. Play them in your browser.";
 // ?v= busts link-preview caches: bump it when public/og.png changes
-const cardUrl = `${site}/og.png?v=1`;
+const cardUrl = `${site}/og.png?v=2`;
 
 export const metadata: Metadata = {
   title,

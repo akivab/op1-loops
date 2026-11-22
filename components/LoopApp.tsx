@@ -453,8 +453,7 @@ export default function LoopApp({
             </button>
             <h2>OP-1 Loops</h2>
             <p className="modal-story">
-              Musical ideas from my OP-1 field{span ? `, ${span}` : ""}: {tapes.length || shownTapes.length} tapes,{" "}
-              {loops.length} four-track loops.
+              Loops from my OP-1{span ? `, ${span}` : ""}: {tapes.length || shownTapes.length} tapes, {loops.length} loops.
             </p>
             <dl className="modal-keys">
               <dt><kbd>Space</kbd></dt>

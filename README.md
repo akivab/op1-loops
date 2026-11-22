@@ -2,7 +2,7 @@
 
 **▶ Listen: [akivab.github.io/op1-loops](https://akivab.github.io/op1-loops/)**
 
-Four-track loops cut from my OP-1 field tapes, played sample-accurately in the browser with the
+Loops from my OP-1, cut from its tape backups and played sample-accurately in the browser with the
 Web Audio API. Switch tracks on and off (now or on the next loop) and watch the mix and
 spectrum. Press `?` on the page for the controls.
 
@@ -19,13 +19,13 @@ spectrum. Press `?` on the page for the controls.
 The page is a player only: there is no editing on it. Loop points and names are set in
 `data/loops.json`.
 
-## Set it up for your own OP-1 field
+## Set it up for your own OP-1
 
-It reads OP-1 field tapes: each tape folder holds `track_1.wav` … `track_4.wav` and a
+It reads OP-1 tape backups: each tape folder holds `track_1.wav` … `track_4.wav` and a
 `tape.json` that lists every clip (where each recording starts and stops). That clip list is
-how loops are found, so you need tapes from an OP-1 field.
+how loops are found, so your tapes need one.
 
-1. **Back up your tapes.** Copy the OP-1 field's `tapes` folder to your computer. Archived tapes
+1. **Back up your tapes.** Copy the OP-1's `tapes` folder to your computer. Archived tapes
    are named for the day they were started (`2023-044#01` is day 44 of 2023), and `tape 01` is
    the one still on the device. Keep the files' modification times when you copy (e.g.
    `cp -Rp`), since the sidebar's "last saved" dates come from each `tape.json`'s mtime.
@@ -50,7 +50,7 @@ how loops are found, so you need tapes from an OP-1 field.
 5. **Listen.** `npm run dev` and open http://localhost:3000. To name a loop or change its
    points, edit it in `data/loops.json` (see [The loop list](#the-loop-list)).
 6. **Make it yours.** The one-line story in the `?` box is in `components/LoopApp.tsx` (search
-   for "Musical ideas"), and the page description is in `app/layout.tsx`.
+   for "Loops from my OP-1"), and the page description is in `app/layout.tsx`.
 7. **Publish.** Encode the stems for the web, commit and push:
 
        npm run encode

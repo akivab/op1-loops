@@ -11,7 +11,7 @@ const args = process.argv.slice(2);
 const url = args.find((a) => a.startsWith("http")) || "http://localhost:3000";
 const loopId = args.includes("--loop") ? args[args.indexOf("--loop") + 1] : null;
 const TITLE = "OP-1 Loops";
-const LINE = process.env.CARD_LINE || "168 four-track loops from my OP-1 field. Play them in your browser.";
+const LINE = process.env.CARD_LINE || "Loops from my OP-1. Play them in your browser.";
 
 const browser = await chromium.launch({ channel: "chrome", args: ["--autoplay-policy=no-user-gesture-required"] });
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 2, colorScheme: "dark" });
